@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Mehul Parmar — RCM Partner, Mentor & Business Executive</title>
+<meta name="description" content="Mehul Parmar — 15+ years of experience across healthcare RCM, business development, career mentorship, and AI. Learn about my background, philosophy, and how I work.">
+<link rel="icon" type="image/png" href="MPbanner.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1e3a8a;--brand:#2563eb;--brand2:#1e40af;--accent:#93c5fd;--slate:#475569;--border:#e2e8f0;--light:#f8fafc;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#1e3a8a;background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;height:auto;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%;}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:100;background:rgba(30,58,138,.98);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+  .nav-logo{font-weight:800;font-size:1rem;color:#fff;white-space:nowrap;}
+  .nav-logo span{color:var(--accent);}
+  .nav-links{display:flex;align-items:center;gap:4px;}
+  .nav-btn{color:#93c5fd;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;transition:background .2s,color .2s;white-space:nowrap;}
+  .nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
+  .nav-btn.active{background:rgba(255,255,255,.15);color:#fff;}
+  .nav-cta{margin-left:8px;background:#fff;color:var(--brand2);padding:8px 16px;border-radius:8px;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap;}
+  .nav-cta:hover{background:#eff6ff;}
+  .nav-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0;}
+  .nav-mobile{display:none;border-top:1px solid rgba(255,255,255,.1);background:var(--navy);}
+  .nav-mobile.open{display:block;}
+  .nav-mobile-inner{padding:12px 20px 20px;}
+  .nav-mobile a{display:block;width:100%;padding:12px 16px;border-radius:8px;color:#93c5fd;font-weight:600;font-size:.95rem;text-align:left;}
+  .nav-mobile a:hover{background:rgba(255,255,255,.08);color:#fff;}
+  .nav-mobile .nav-cta{display:block;text-align:center;margin:8px 0 0;background:#fff;color:var(--brand2);}
+  @media(max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* PAGE HEADER */
+  .page-header{background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 60%,#2563eb 100%);color:#fff;padding:72px 0 80px;text-align:center;position:relative;overflow:hidden;}
+  .page-header::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(147,197,253,.15),transparent 70%);border-radius:50%;pointer-events:none;}
+  .page-header-inner{max-width:760px;margin:0 auto;position:relative;z-index:1;}
+  .page-header .badge{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:var(--accent);padding:6px 16px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.6px;margin-bottom:20px;}
+  .page-header h1{font-size:2.5rem;line-height:1.15;font-weight:800;margin-bottom:16px;letter-spacing:-.015em;}
+  .page-header p{font-size:1.05rem;color:#bfdbfe;max-width:640px;margin:0 auto;}
+
+  /* SECTIONS */
+  .py-24{padding:96px 0;}
+  .py-16{padding:64px 0;}
+  .bg-light{background:var(--light);}
+  .bg-dark{background:var(--navy);color:#fff;}
+  .bg-brand-grad{background:linear-gradient(135deg,#1e40af 0%,#2563eb 100%);color:#fff;}
+  .section-title{font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:12px;letter-spacing:-.01em;}
+  .section-sub{color:var(--slate);margin-bottom:40px;max-width:720px;font-size:1rem;}
+  .bg-dark .section-sub{color:#bfdbfe;}
+  .bg-dark .section-title{color:#fff;}
+
+  /* ABOUT GRID */
+  .about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start;}
+  .about-visual{background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 100%);border-radius:20px;padding:40px;color:#fff;position:sticky;top:88px;}
+  .about-avatar{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#93c5fd,#fff);color:var(--brand2);display:flex;align-items:center;justify-content:center;font-size:2.5rem;font-weight:900;margin-bottom:20px;border:4px solid rgba(255,255,255,.3);}
+  .about-visual h2{font-size:1.4rem;font-weight:800;margin-bottom:6px;}
+  .about-visual .role{color:var(--accent);font-weight:600;font-size:.9rem;margin-bottom:20px;}
+  .about-visual ul li{font-size:.875rem;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.15);display:flex;justify-content:space-between;gap:12px;}
+  .about-visual ul li:last-child{border-bottom:none;}
+  .about-visual ul li .k{color:#93c5fd;}
+  .about-visual ul li .v{color:#fff;font-weight:600;text-align:right;}
+
+  .about-content p{font-size:1.02rem;color:var(--slate);margin-bottom:18px;line-height:1.75;}
+  .about-content p strong{color:var(--navy);}
+  .about-content .lead{font-size:1.15rem;color:var(--navy);font-weight:500;line-height:1.6;}
+
+  /* EXPERIENCE TIMELINE */
+  .timeline{position:relative;padding-left:36px;margin-top:24px;}
+  .timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,#2563eb,#93c5fd);}
+  .tl-item{position:relative;padding-bottom:32px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{content:"";position:absolute;left:-36px;top:6px;width:18px;height:18px;border-radius:50%;background:#fff;border:3px solid var(--brand);box-shadow:0 0 0 4px rgba(37,99,235,.15);}
+  .tl-item .period{font-size:.8rem;color:var(--brand2);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px;}
+  .tl-item h4{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .tl-item .company{color:var(--slate);font-size:.9rem;font-weight:500;margin-bottom:8px;}
+  .tl-item p{font-size:.9rem;color:var(--slate);}
+
+  /* SKILLS TAGS */
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .tag{background:#dbeafe;color:var(--brand2);padding:7px 14px;border-radius:999px;font-size:.82rem;font-weight:600;}
+  .tag-solid{background:var(--brand);color:#fff;}
+
+  /* EXPERTISE GRID */
+  .expertise{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
+  .exp-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px;transition:box-shadow .25s,transform .25s;}
+  .exp-card:hover{box-shadow:0 8px 24px rgba(30,58,138,.08);transform:translateY(-2px);}
+  .exp-card h4{font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--navy);display:flex;align-items:center;gap:8px;}
+  .exp-card p{font-size:.88rem;color:var(--slate);}
+
+  /* EDUCATION */
+  .edu-item{background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px 26px;margin-bottom:14px;display:flex;justify-content:space-between;gap:20px;align-items:center;}
+  .edu-item .edu-info h4{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .edu-item .edu-info p{font-size:.875rem;color:var(--slate);}
+  .edu-item .edu-year{font-size:.85rem;font-weight:700;color:var(--brand2);white-space:nowrap;}
+
+  /* PHILOSOPHY */
+  .philosophy{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:32px;}
+  .quote{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-left:5px solid var(--accent);border-radius:13px;padding:26px;}
+  .quote p{font-size:1rem;color:#dbeafe;line-height:1.7;margin-bottom:12px;}
+  .quote p:last-child{margin-bottom:0;}
+  .quote p strong{color:#fff;}
+
+  /* CTA */
+  .cta-center{text-align:center;max-width:740px;margin:0 auto;}
+  .cta-center h2{font-size:2rem;font-weight:800;margin-bottom:14px;letter-spacing:-.01em;}
+  .cta-center p{color:#dbeafe;margin-bottom:28px;font-size:1rem;}
+  .cta-center .btn-group{justify-content:center;}
+
+  /* BUTTONS */
+  .btn-group{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:12px;font-weight:700;font-size:.93rem;transition:transform .2s,background .2s;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;}
+  .btn-wa{background:#22c55e;color:#fff;box-shadow:0 4px 14px rgba(34,197,94,.3);}
+  .btn-wa:hover{background:#16a34a;transform:translateY(-2px);}
+  .btn-white{background:#fff;color:var(--brand2);box-shadow:0 4px 14px rgba(0,0,0,.25);}
+  .btn-white:hover{background:#eff6ff;transform:translateY(-2px);}
+  .btn-brand{background:var(--brand);color:#fff;}
+  .btn-brand:hover{background:var(--brand2);transform:translateY(-2px);}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:#bfdbfe;padding:60px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;margin-bottom:40px;}
+  footer h4{color:#fff;font-weight:700;font-size:.9rem;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
+  footer p{font-size:.875rem;line-height:1.7;}
+  footer li{padding:5px 0;}
+  footer li a{font-size:.875rem;color:#bfdbfe;transition:color .2s;}
+  footer li a:hover{color:#fff;}
+  footer .socials{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  footer .socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;}
+  footer .socials a:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
+  footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:32px;text-align:center;font-size:.85rem;color:#94a3b8;}
+  footer .legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px;}
+  footer .legal-links a{color:#93c5fd;font-size:.85rem;}
+  footer .legal-links a:hover{color:#fff;}
+
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .page-header{padding:56px 0 64px;}
+    .page-header h1{font-size:1.85rem;}
+    .about-grid{grid-template-columns:1fr;gap:36px;}
+    .about-visual{position:static;}
+    .expertise{grid-template-columns:1fr;}
+    .philosophy{grid-template-columns:1fr;}
+    .py-24{padding:64px 0;}
+    .py-16{padding:48px 0;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
+    footer .socials{justify-content:center;}
+    .btn{width:100%;max-width:280px;}
+    .btn-group{flex-direction:column;align-items:center;}
+    .edu-item{flex-direction:column;align-items:flex-start;gap:6px;}
+  }
+  @media(max-width:480px){
+    .page-header h1{font-size:1.55rem;}
+    .section-title{font-size:1.35rem;}
+    .container{padding:0 16px;}
+    .about-visual{padding:28px;}
+    .quote{padding:20px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Mehul <span>Parmar</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="services.html" class="nav-btn">Services</a>
+      <a href="about.html" class="nav-btn active">About</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="4" y1="12" x2="20" y2="12"/>
+        <line x1="4" y1="18" x2="20" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <div class="nav-mobile-inner">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-header">
+  <div class="container page-header-inner">
+    <span class="badge">ABOUT ME</span>
+    <h1>One Partner. Four Capabilities.</h1>
+    <p>15+ years of professional experience across healthcare revenue, business growth, career mentorship, and modern skills.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="py-24">
+  <div class="container">
+    <div class="about-grid">
+      <!-- SIDEBAR -->
+      <div class="about-visual">
+        <div class="about-avatar">MP</div>
+        <h2>Mehul Parmar</h2>
+        <p class="role">Business Development Executive · Mentor · Revenue Partner</p>
+        <ul>
+          <li><span class="k">Location</span><span class="v">Greater Ahmedabad, India</span></li>
+          <li><span class="k">Experience</span><span class="v">15+ Years</span></li>
+          <li><span class="k">BPO / KPO</span><span class="v">11+ Years</span></li>
+          <li><span class="k">Serving</span><span class="v">US Providers &amp; Global Clients</span></li>
+          <li><span class="k">Time Zones</span><span class="v">EST · CST · MST · PST</span></li>
+          <li><span class="k">Languages</span><span class="v">English, Hindi, Gujarati</span></li>
+        </ul>
+        <div style="margin-top:24px">
+          <a class="btn btn-white" href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" style="width:100%;justify-content:center">Book a Free Call</a>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="about-content">
+        <p class="lead">I help people and practices focus on what they do best — by taking the operational chaos off their plate.</p>
+        <p>For over <strong>15 years</strong>, I've worked at the intersection of <strong>business development</strong>, <strong>healthcare revenue cycle management</strong>, and <strong>client relationships</strong>. My career began in BPO/KPO operations — where I spent <strong>11+ years</strong> mastering SLA-driven delivery, complex client communication, and process execution at scale.</p>
+        <p>Today, I bring that same discipline to four areas that matter most:</p>
+        <ul style="margin:12px 0 22px 0;padding-left:0">
+          <li style="padding:6px 0 6px 24px;position:relative;color:var(--slate)"><span style="position:absolute;left:0;color:var(--brand);font-weight:800">✓</span> <strong style="color:var(--navy)">US Healthcare Providers</strong> — helping them collect revenue they've already earned, without the billing headache.</li>
+          <li style="padding:6px 0 6px 24px;position:relative;color:var(--slate)"><span style="position:absolute;left:0;color:var(--brand);font-weight:800">✓</span> <strong style="color:var(--navy)">Small Business Owners</strong> — building real online presence without the tech overwhelm.</li>
+          <li style="padding:6px 0 6px 24px;position:relative;color:var(--slate)"><span style="position:absolute;left:0;color:var(--brand);font-weight:800">✓</span> <strong style="color:var(--navy)">Students &amp; Professionals</strong> — getting real career direction, not generic advice.</li>
+          <li style="padding:6px 0 6px 24px;position:relative;color:var(--slate)"><span style="position:absolute;left:0;color:var(--brand);font-weight:800">✓</span> <strong style="color:var(--navy)">Curious Learners</strong> — mastering AI tools and modern skills before the world moves on without them.</li>
+        </ul>
+        <p>What makes me different isn't a single specialty — it's the ability to <strong>connect disciplines</strong>. A practice owner who understands business development thinks about revenue differently. A mentor who's led teams understands career pivots differently. Someone who's built online presence understands AI tools differently.</p>
+        <p style="font-weight:600;color:var(--navy);margin-top:22px">That intersection is where I work. That's what I bring to every client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE ============ -->
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">Core Areas of Expertise</h2>
+    <p class="section-sub">Not surface-level familiarity. Deep, practical knowledge built over years of real work.</p>
+
+    <div class="expertise">
+      <div class="exp-card">
+        <h4>🩺 Revenue Cycle Management</h4>
+        <p>End-to-end RCM ownership: eligibility, coding, submission, denial management, A/R recovery, and HIPAA-compliant operations for US healthcare practices.</p>
+      </div>
+      <div class="exp-card">
+        <h4>📊 Business Development</h4>
+        <p>Client acquisition, relationship management, go-to-market strategy, pricing, and process optimization — built over 11+ years in BPO/KPO environments.</p>
+      </div>
+      <div class="exp-card">
+        <h4>🚀 Small Business Growth</h4>
+        <p>Website builds, brand positioning, Google Business Profile, social media presence, and lead funnels — helping small businesses become visible and trusted.</p>
+      </div>
+      <div class="exp-card">
+        <h4>🎓 Career Mentorship</h4>
+        <p>Real-world guidance for students and professionals: career clarity, resume, LinkedIn, interview prep, pivots, and confidence coaching.</p>
+      </div>
+      <div class="exp-card">
+        <h4>🤖 AI &amp; Modern Skills</h4>
+        <p>Teaching practical AI tools, prompt engineering, no-code development, and automation — so people and businesses stay ahead of the curve.</p>
+      </div>
+      <div class="exp-card">
+        <h4>⚙️ Process &amp; Documentation</h4>
+        <p>Building documented systems and SOPs that survive staff turnover — so businesses don't reset every time someone leaves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE TIMELINE ============ -->
+<section class="py-24">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-sub">A career built on process, communication, and outcomes — from global BPO environments to specialized healthcare revenue.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="period">Present</div>
+        <h4>Freelance Business Development Manager</h4>
+        <div class="company">Medical Billing &amp; RCM · Independent Practice</div>
+        <p>Partnering with US healthcare organizations to fix revenue cycle challenges and build compliance-driven billing operations. Full RCM ownership — denials, A/R, underpayments, and HIPAA-compliant workflows. Also building online presence for small businesses and mentoring professionals on career and AI.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="period">Former</div>
+        <h4>Amazon Trained Ecommerce Specialist</h4>
+        <div class="company">Amazon ATS Program</div>
+        <p>Trained and certified in ecommerce operations under the Amazon ATS program — building foundational skills in digital commerce, listing optimization, and marketplace strategy.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="period">Former</div>
+        <h4>Customer Support Executive</h4>
+        <div class="company">Tech Mahindra</div>
+        <p>Delivered end-to-end customer support in a global BPO environment with strict SLA-driven performance. Developed deep skills in client communication, escalation handling, and process execution.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="period">Former</div>
+        <h4>Customer Support Representative</h4>
+        <div class="company">Aegis BPO Services Ltd</div>
+        <p>Handled client communication and process execution across complex service environments. Built the foundation for a career focused on relationships, responsiveness, and results.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="period">Former</div>
+        <h4>Customer Support Representative</h4>
+        <div class="company">Resolve to Save Lives</div>
+        <p>Supported operations for a global public-health initiative — contributing to meaningful work while building professional discipline and clarity of purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">Skills &amp; Tools</h2>
+    <p class="section-sub">Practical capabilities built through years of real client work — not certifications alone.</p>
+
+    <div class="tags">
+      <span class="tag tag-solid">Revenue Cycle Management</span>
+      <span class="tag tag-solid">Denial Management</span>
+      <span class="tag tag-solid">A/R Recovery</span>
+      <span class="tag tag-solid">Underpayment Recovery</span>
+      <span class="tag">Eligibility Verification</span>
+      <span class="tag">Credentialing</span>
+      <span class="tag">HIPAA Compliance</span>
+      <span class="tag">Medical Coding Oversight</span>
+      <span class="tag">Business Development</span>
+      <span class="tag">Client Relationship Management</span>
+      <span class="tag">Process Documentation</span>
+      <span class="tag">Revenue Analysis</span>
+      <span class="tag">Career Mentorship</span>
+      <span class="tag">AI Tools &amp; Automation</span>
+      <span class="tag">Prompt Engineering</span>
+      <span class="tag">No-Code Development</span>
+      <span class="tag">Digital Marketing</span>
+      <span class="tag">Online Presence Building</span>
+      <span class="tag">Website Building</span>
+      <span class="tag">Google Business Profile</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="py-24">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <p class="section-sub">Foundational training that supports a career built on continuous learning.</p>
+
+    <div class="edu-item">
+      <div class="edu-info">
+        <h4>Computer Education</h4>
+        <p>Aptech Computer Education, Ahmedabad — Computer applications and software training</p>
+      </div>
+      <div class="edu-year">Certification</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-info">
+        <h4>Higher Secondary Certificate (HSC)</h4>
+        <p>Gujarat Secondary &amp; Higher Secondary Education Board (GSHSEB) — Ranjitpura High School</p>
+      </div>
+      <div class="edu-year">2008 – 2009</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-info">
+        <h4>Secondary School Certificate (SSC)</h4>
+        <p>Gujarat Secondary Education Board (GSEB) — Seth Hasan Ali High School of Commerce, Dholka</p>
+      </div>
+      <div class="edu-year">2006 – 2007</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="py-24 bg-dark">
+  <div class="container">
+    <h2 class="section-title">What I Believe</h2>
+    <p class="section-sub">The principles that shape how I work — and why clients stay.</p>
+
+    <div class="philosophy">
+      <div class="quote">
+        <p><strong>"Revenue is not finance. It's infrastructure."</strong></p>
+        <p>Most practices don't need a cheaper biller — they need an owned, accountable system.</p>
+      </div>
+      <div class="quote">
+        <p><strong>"Denials are data, not defeats."</strong></p>
+        <p>Every denial tells you exactly where your workflow is broken. Most practices delete the message instead of reading it.</p>
+      </div>
+      <div class="quote">
+        <p><strong>"Small businesses don't fail from bad products."</strong></p>
+        <p>They fail from being invisible. The internet is a distribution channel — most owners just don't know how to use it.</p>
+      </div>
+      <div class="quote">
+        <p><strong>"AI won't replace you. But someone using AI will."</strong></p>
+        <p>The goal isn't to become a programmer. It's to become someone AI makes more powerful — not redundant.</p>
+      </div>
+      <div class="quote">
+        <p><strong>"Clarity comes from action, not thinking."</strong></p>
+        <p>You can't think your way to a career — you have to test, learn, and adjust. Movement beats meditation.</p>
+      </div>
+      <div class="quote">
+        <p><strong>"Systems beat willpower. Every time."</strong></p>
+        <p>You don't need more motivation. You need better defaults, better workflows, and documented processes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ME ============ -->
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">Why Work With Me</h2>
+    <p class="section-sub">Not an agency. Not a call center. A direct partner with a clear scope and a track record.</p>
+
+    <div class="expertise">
+      <div class="exp-card">
+        <h4>✅ 15+ Years Real Experience</h4>
+        <p>Not theory, not certifications. Real work with real clients — spanning BPO/KPO, healthcare RCM, and business development.</p>
+      </div>
+      <div class="exp-card">
+        <h4>✅ Four Capabilities in One</h4>
+        <p>RCM, business growth, career mentorship, and AI — all in one partner. No juggling multiple vendors.</p>
+      </div>
+      <div class="exp-card">
+        <h4>✅ Direct Communication</h4>
+        <p>No agencies, no ticket systems, no gatekeepers. You talk to me — and I answer.</p>
+      </div>
+      <div class="exp-card">
+        <h4>✅ Outcome-Focused</h4>
+        <p>Measured in collections, growth, clarity, and capability — not in hours billed or reports delivered.</p>
+      </div>
+      <div class="exp-card">
+        <h4>✅ Full US Time Zone Coverage</h4>
+        <p>EST · CST · MST · PST. Whenever you need me, I'm available.</p>
+      </div>
+      <div class="exp-card">
+        <h4>✅ HIPAA-Compliant Operations</h4>
+        <p>Every workflow built to meet regulatory standards — with secure PHI handling and documented protocols.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="py-24 bg-brand-grad">
+  <div class="container cta-center">
+    <h2>Let's work together.</h2>
+    <p>Whether you're a US provider, small business owner, professional seeking direction, or curious about AI — one conversation is all it takes.</p>
+
+    <div class="btn-group">
+      <a class="btn btn-wa" href="https://wa.me/917043795279" target="_blank" rel="noopener">WhatsApp Now</a>
+      <a class="btn btn-white" href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener">Book a Free Call</a>
+      <a class="btn btn-ghost" href="contact.html
