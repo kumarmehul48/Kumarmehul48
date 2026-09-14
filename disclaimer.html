@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disclaimer | Mehul Parmar</title>
+<meta name="description" content="Medical, Earnings, Professional, and General Disclaimers for Mehul Parmar — RCM Partner, Business Coach & AI Mentor.">
+<link rel="icon" type="image/png" href="MPbanner.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1e3a8a;--brand:#2563eb;--brand2:#1e40af;--accent:#93c5fd;--slate:#475569;--border:#e2e8f0;--light:#f8fafc;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#1e3a8a;background:#fff;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;height:auto;}
+  a{color:var(--brand2);text-decoration:none;font-weight:500;}
+  a:hover{text-decoration:underline;}
+  ul{list-style:none;padding-left:0;}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%;}
+
+  .nav{position:sticky;top:0;z-index:100;background:rgba(30,58,138,.98);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+  .nav-logo{font-weight:800;font-size:1rem;color:#fff;white-space:nowrap;}
+  .nav-logo span{color:var(--accent);}
+  .nav-links{display:flex;align-items:center;gap:4px;}
+  .nav-btn{color:#93c5fd;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;transition:background .2s,color .2s;white-space:nowrap;}
+  .nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
+  .nav-cta{margin-left:8px;background:#fff;color:var(--brand2);padding:8px 16px;border-radius:8px;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap;}
+  .nav-cta:hover{background:#eff6ff;}
+  .nav-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0;}
+  .nav-mobile{display:none;border-top:1px solid rgba(255,255,255,.1);background:var(--navy);}
+  .nav-mobile.open{display:block;}
+  .nav-mobile-inner{padding:12px 20px 20px;}
+  .nav-mobile a{display:block;width:100%;padding:12px 16px;border-radius:8px;color:#93c5fd;font-weight:600;font-size:.95rem;text-align:left;}
+  .nav-mobile a:hover{background:rgba(255,255,255,.08);color:#fff;}
+  .nav-mobile .nav-cta{display:block;text-align:center;margin:8px 0 0;background:#fff;color:var(--brand2);}
+  @media(max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  .page-header{background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 60%,#2563eb 100%);color:#fff;padding:64px 0 72px;text-align:center;position:relative;overflow:hidden;}
+  .page-header::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(147,197,253,.15),transparent 70%);border-radius:50%;pointer-events:none;}
+  .page-header-inner{max-width:760px;margin:0 auto;position:relative;z-index:1;}
+  .page-header .badge{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:var(--accent);padding:6px 16px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.6px;margin-bottom:18px;}
+  .page-header h1{font-size:2.25rem;line-height:1.2;font-weight:800;margin-bottom:14px;letter-spacing:-.015em;}
+  .page-header p{font-size:1rem;color:#bfdbfe;max-width:640px;margin:0 auto;}
+  .page-header .updated{display:inline-block;margin-top:14px;font-size:.85rem;color:#93c5fd;background:rgba(255,255,255,.08);padding:5px 12px;border-radius:6px;}
+
+  .legal-wrap{max-width:860px;margin:0 auto;padding:64px 20px 80px;}
+  .legal-wrap h2{font-size:1.4rem;font-weight:800;color:var(--navy);margin:44px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--border);letter-spacing:-.01em;}
+  .legal-wrap h2:first-of-type{margin-top:0;}
+  .legal-wrap h3{font-size:1.05rem;font-weight:700;color:var(--brand2);margin:24px 0 10px;}
+  .legal-wrap p{font-size:.97rem;color:var(--slate);margin-bottom:14px;}
+  .legal-wrap ul{margin:10px 0 16px 0;}
+  .legal-wrap ul li{font-size:.95rem;color:var(--slate);padding:5px 0 5px 22px;position:relative;}
+  .legal-wrap ul li::before{content:"•";color:var(--brand);font-weight:800;position:absolute;left:6px;top:5px;font-size:1.1rem;}
+  .legal-wrap strong{color:var(--navy);font-weight:700;}
+  .legal-wrap a{color:var(--brand2);}
+  .callout{background:var(--light);border-left:4px solid var(--brand);border-radius:10px;padding:18px 22px;margin:18px 0;}
+  .callout p{margin-bottom:0;font-size:.94rem;}
+  .callout p strong{color:var(--brand2);}
+  .warning{background:#fef3c7;border-left:4px solid #f59e0b;border-radius:10px;padding:18px 22px;margin:18px 0;}
+  .warning p{margin-bottom:0;font-size:.94rem;color:#78350f;}
+  .warning p strong{color:#92400e;}
+  .info-box{background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 100%);color:#fff;border-radius:14px;padding:26px 30px;margin:24px 0;}
+  .info-box h3{color:#fff;margin-top:0;font-size:1.1rem;margin-bottom:10px;}
+  .info-box p{color:#dbeafe;font-size:.95rem;margin-bottom:8px;}
+  .info-box a{color:#93c5fd;font-weight:600;}
+  .toc{background:var(--light);border:1px solid var(--border);border-radius:12px;padding:22px 26px;margin-bottom:34px;}
+  .toc h3{font-size:.95rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--navy);margin:0 0 12px;}
+  .toc ul li{padding:4px 0;}
+  .toc ul li::before{content:"";}
+  .toc ul li a{color:var(--brand2);font-size:.9rem;font-weight:600;}
+  .toc ul li a:hover{text-decoration:underline;}
+
+  footer{background:var(--navy);color:#bfdbfe;padding:60px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;margin-bottom:40px;}
+  footer h4{color:#fff;font-weight:700;font-size:.9rem;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
+  footer p{font-size:.875rem;line-height:1.7;}
+  footer li{padding:5px 0;}
+  footer li a{font-size:.875rem;color:#bfdbfe;transition:color .2s;font-weight:500;}
+  footer li a:hover{color:#fff;text-decoration:none;}
+  footer .socials{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  footer .socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;}
+  footer .socials a:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
+  footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:32px;text-align:center;font-size:.85rem;color:#94a3b8;}
+  footer .legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px;}
+  footer .legal-links a{color:#93c5fd;font-size:.85rem;font-weight:500;}
+  footer .legal-links a:hover{color:#fff;}
+
+  @media(max-width:900px){
+    .page-header{padding:48px 0 56px;}
+    .page-header h1{font-size:1.75rem;}
+    .legal-wrap{padding:44px 20px 60px;}
+    .legal-wrap h2{font-size:1.2rem;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
+    footer .socials{justify-content:center;}
+    .info-box{padding:22px 20px;}
+  }
+  @media(max-width:480px){
+    .page-header h1{font-size:1.5rem;}
+    .legal-wrap h2{font-size:1.1rem;}
+    .container{padding:0 16px;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Mehul <span>Parmar</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="services.html" class="nav-btn">Services</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="4" y1="12" x2="20" y2="12"/>
+        <line x1="4" y1="18" x2="20" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <div class="nav-mobile-inner">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container page-header-inner">
+    <span class="badge">LEGAL</span>
+    <h1>Disclaimer</h1>
+    <p>Important notices about the information, services, and content on this website.</p>
+    <span class="updated">Last Updated: 15 September 2026</span>
+  </div>
+</section>
+
+<section class="legal-wrap">
+
+  <div class="toc">
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#general">1. General Disclaimer</a></li>
+      <li><a href="#medical">2. Medical &amp; Healthcare Disclaimer</a></li>
+      <li><a href="#hipaa">3. HIPAA &amp; PHI Notice</a></li>
+      <li><a href="#billing">4. Medical Billing &amp; RCM Disclaimer</a></li>
+      <li><a href="#earnings">5. Earnings &amp; Results Disclaimer</a></li>
+      <li><a href="#professional">6. Professional Advice Disclaimer</a></li>
+      <li><a href="#career">7. Career Mentorship Disclaimer</a></li>
+      <li><a href="#ai">8. AI &amp; Technology Disclaimer</a></li>
+      <li><a href="#thirdparty">9. Third-Party Content &amp; Links</a></li>
+      <li><a href="#accuracy">10. Accuracy &amp; Completeness</a></li>
+      <li><a href="#testimonials">11. Testimonials &amp; Case Studies</a></li>
+      <li><a href="#india">12. India-Specific Disclaimer</a></li>
+      <li><a href="#usa">13. USA-Specific Disclaimer</a></li>
+      <li><a href="#contact-us">14. Contact</a></li>
+    </ul>
+  </div>
+
+  <h2 id="general">1. General Disclaimer</h2>
+  <p>The information provided on <a href="https://kumarmehul48.github.io/">kumarmehul48.github.io</a> (the "Website") and through any service offered by <strong>Mehul Parmar</strong> ("I," "me," "my," or "the business") is for general informational and professional services purposes only.</p>
+  <p>By accessing this Website or engaging my services, you acknowledge and agree to the following:</p>
+  <ul>
+    <li>All information is provided "as is" without warranty of any kind</li>
+    <li>You are responsible for how you use any information or services obtained here</li>
+    <li>No content on this Website constitutes a binding offer, guarantee, or warranty</li>
+    <li>Any reliance you place on information provided is at your own risk</li>
+    <li>Specific terms of any engagement are governed by a separate written agreement</li>
+  </ul>
+
+  <h2 id="medical">2. Medical &amp; Healthcare Disclaimer</h2>
+  <div class="warning">
+    <p><strong>Important:</strong> I am NOT a physician, nurse, or licensed healthcare provider. Nothing on this Website constitutes medical advice, diagnosis, or treatment.</p>
+  </div>
+  <p>I provide <strong>business and administrative services</strong> to US healthcare practices — including Revenue Cycle Management (RCM), medical billing support, denial management, and A/R recovery. My services are strictly <strong>administrative and operational</strong> in nature.</p>
+  <ul>
+    <li>I do not provide clinical advice, medical opinions, or treatment recommendations</li>
+    <li>I do not make decisions on patient care, coding of clinical conditions, or medical necessity</li>
+    <li>All clinical coding decisions remain the responsibility of the provider and their qualified coding staff</li>
+    <li>Patients should always consult licensed healthcare professionals for medical concerns</li>
+    <li>Providers remain responsible for compliance with all clinical and regulatory obligations in their jurisdiction</li>
+  </ul>
+
+  <h2 id="hipaa">3. HIPAA &amp; PHI Notice</h2>
+  <p>For US healthcare providers engaging RCM services:</p>
+  <ul>
+    <li>All handling of Protected Health Information (PHI) follows HIPAA Privacy, Security, and Breach Notification Rules</li>
+    <li>A <strong>Business Associate Agreement (BAA)</strong> is executed <strong>before</strong> any PHI is accessed or processed</li>
+    <li>PHI is transmitted only through secure, encrypted channels</li>
+    <li>PHI is never used for marketing, resale, or any purpose outside the agreed engagement</li>
+    <li>Access to PHI is limited to personnel directly involved in delivering the service</li>
+  </ul>
+  <div class="callout">
+    <p><strong>Do not send PHI</strong> through this Website's contact forms, unencrypted email, or social media. Any PHI must only be shared via secure, HIPAA-compliant channels established after a BAA is signed.</p>
+  </div>
+
+  <h2 id="billing">4. Medical Billing &amp; RCM Disclaimer</h2>
+  <p>Revenue Cycle Management services are delivered with professional skill and industry best practices, but the following realities apply:</p>
+  <ul>
+    <li><strong>Payer decisions are outside my control.</strong> Reimbursement outcomes depend on payer policies, medical necessity determinations, and coverage rules</li>
+    <li><strong>No guarantee of specific collection amounts.</strong> Results vary based on specialty, payer mix, patient volume, documentation quality, and other factors</li>
+    <li><strong>Coding decisions rest with the provider.</strong> I support coding workflows but do not assume clinical responsibility for coding choices</li>
+    <li><strong>Compliance is shared.</strong> Providers must ensure that claims submitted reflect services actually rendered</li>
+    <li><strong>Regulatory changes.</strong> Healthcare regulations (CMS, OIG, state rules) change frequently; I follow current rules but cannot guarantee compliance against future changes</li>
+    <li><strong>Past results do not guarantee future results.</strong> Case studies or examples are illustrative only</li>
+  </ul>
+
+  <h2 id="earnings">5. Earnings &amp; Results Disclaimer</h2>
+  <div class="warning">
+    <p><strong>No guarantee of income, revenue, or results.</strong> Any reference to revenue, collections, denial reductions, or business growth is illustrative only — not a promise.</p>
+  </div>
+  <p>If you engage my services — whether RCM, business consulting, career mentorship, or AI training — you acknowledge:</p>
+  <ul>
+    <li><strong>Results depend on many factors outside my control</strong> — including your practice's operations, market, execution, timing, and payer behavior</li>
+    <li><strong>No specific income, revenue, or growth outcome is guaranteed</strong></li>
+    <li><strong>Case studies, examples, or statistical references</strong> describe what has happened for others — not what will happen for you</li>
+    <li><strong>Industry data cited</strong> (e.g., denial rates, cost-to-rework figures) comes from published sources and is used to illustrate context — not to promise specific outcomes</li>
+    <li><strong>You are responsible for your own business decisions</strong> and their consequences</li>
+  </ul>
+
+  <h2 id="professional">6. Professional Advice Disclaimer</h2>
+  <p>Nothing on this Website constitutes:</p>
+  <ul>
+    <li><strong>Legal advice</strong> — consult a licensed attorney for legal matters</li>
+    <li><strong>Financial or tax advice</strong> — consult a qualified accountant or tax advisor</li>
+    <li><strong>Medical or clinical advice</strong> — consult a licensed healthcare professional</li>
+    <li><strong>Investment advice</strong> — consult a registered investment advisor</li>
+    <li><strong>Regulatory or compliance certification</strong> — my services support compliance but do not constitute legal certification</li>
+  </ul>
+  <p>Any information shared on this Website is educational and professional in nature, but does not replace the advice of licensed professionals in their respective fields.</p>
+
+  <h2 id="career">7. Career Mentorship Disclaimer</h2>
+  <p>Career mentorship is designed to provide honest guidance, practical frameworks, and structured support. However:</p>
+  <ul>
+    <li>Career outcomes depend on <strong>your effort, decisions, market conditions, and third-party hiring decisions</strong></li>
+    <li>No guarantee is made regarding job placement, promotions, salary increases, or specific career outcomes</li>
+    <li>Mentorship is <strong>advisory in nature</strong> — you retain full responsibility for your career decisions</li>
+    <li>Any advice provided is based on my professional experience and is not a substitute for advice from a licensed career counselor, psychologist, or therapist where those services are required</li>
+  </ul>
+
+  <h2 id="ai">8. AI &amp; Technology Disclaimer</h2>
+  <p>AI and technology mentorship covers tools, workflows, and frameworks for using modern AI in professional and business contexts:</p>
+  <ul>
+    <li>AI tools (ChatGPT, Claude, Gemini, etc.) are developed and controlled by third parties — I do not control their availability, accuracy, or features</li>
+    <li>AI outputs should always be reviewed by a human before being relied upon — especially in regulated fields like healthcare</li>
+    <li>I do not guarantee that AI-generated outputs will be accurate, compliant, or suitable for any specific purpose</li>
+    <li>You remain responsible for how you use AI tools and any outputs they produce</li>
+    <li>AI is a fast-moving field — training content reflects practices at the time of delivery and may evolve</li>
+  </ul>
+
+  <h2 id="thirdparty">9. Third-Party Content &amp; Links</h2>
+  <p>This Website may contain links to third-party websites, tools, or resources (e.g., Calendly, WhatsApp, LinkedIn, Google). I do not control and am not responsible for:</p>
+  <ul>
+    <li>The content, accuracy, or availability of third-party sites</li>
+    <li>Their privacy practices, terms of service, or data handling</li>
+    <li>Any damages or losses arising from your use of third-party services</li>
+  </ul>
+  <p>Third-party links are provided for convenience and reference only. Use of any third-party service is at your own discretion and subject to their terms.</p>
+
+  <h2 id="accuracy">10. Accuracy &amp; Completeness</h2>
+  <p>I make reasonable efforts to keep the information on this Website accurate and current. However:</p>
+  <ul>
+    <li>Information may become outdated as laws, industries, and tools evolve</li>
+    <li>I do not warrant that all content is free of errors or omissions</li>
+    <li>Industry data, statistics, or references may reflect conditions at the time of publication</li>
+    <li>Any decisions made based on Website content are made at your own risk</li>
+  </ul>
+  <p>For engagement-specific information, always refer to the applicable service agreement or proposal.</p>
+
+  <h2 id="testimonials">11. Testimonials &amp; Case Studies</h2>
+  <p>Any testimonials, case studies, or examples shared on this Website, in proposals, or during engagements:</p>
+  <ul>
+    <li>Represent <strong>individual experiences</strong> and are not typical or guaranteed</li>
+    <li>Are <strong>not promises</strong> of similar results for other clients</li>
+    <li>May have been edited for clarity or confidentiality (identifying details removed)</li>
+    <li>Reflect the specific context and constraints of the individual case</li>
+  </ul>
+
+  <h2 id="india">12. India-Specific Disclaimer</h2>
+  <p>For clients and visitors located in India:</p>
+  <ul>
+    <li>Services are provided in accordance with the <strong>Indian Contract Act, 1872</strong> and applicable laws</li>
+    <li>Statutory rights under the <strong>Consumer Protection Act, 2019</strong> remain fully available</li>
+    <li>Data handling follows the <strong>Digital Personal Data Protection Act, 2023</strong> (see <a href="privacy.html">Privacy Policy</a>)</li>
+    <li>GST is applied as per prevailing Indian tax regulations where applicable</li>
+    <li>Jurisdiction for disputes is governed by the <a href="terms.html">Terms of Service</a> (Ahmedabad, Gujarat)</li>
+  </ul>
+
+  <h2 id="usa">13. USA-Specific Disclaimer</h2>
+  <p>For clients and visitors located in the United States:</p>
+  <ul>
+    <li>RCM and healthcare engagements follow <strong>HIPAA</strong> requirements (see Section 3)</li>
+    <li>California residents have specific rights under <strong>CCPA/CPRA</strong> (see <a href="privacy.html">Privacy Policy</a>)</li>
+    <li>State consumer protection laws may provide additional rights in your state</li>
+    <li>If a signed service agreement specifies US governing law or arbitration, those terms apply to disputes</li>
+    <li>Nothing in this Disclaimer limits any rights you may have under applicable federal or state law</li>
+  </ul>
+
+  <h2 id="contact-us">14. Contact</h2>
+  <p>If you have any questions about this Disclaimer, or need clarification on any of the above, contact:</p>
+
+  <div class="info-box">
+    <h3>Mehul Parmar</h3>
+    <p><strong>Email:</strong> <a href="mailto:kumarmehul48@gmail.com">kumarmehul48@gmail.com</a></p>
+    <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/917043795279">+91 70437 95279</a></p>
+    <p><strong>Location:</strong> Greater Ahmedabad Area, India</p>
+    <p><strong>Website:</strong> <a href="https://kumarmehul48.github.io/">kumarmehul48.github.io</a></p>
+  </div>
+
+  <div class="callout" style="margin-top:32px">
+    <p><strong>Acknowledgment:</strong> By using this Website or engaging my services, you confirm that you have read, understood, and accepted this Disclaimer in full — along with the <a href="privacy.html">Privacy Policy</a>, <a href="terms.html">Terms of Service</a>, and <a href="refund.html">Refund Policy</a>.</p>
+  </div>
+
+  <p style="margin-top:32px;font-size:.85rem;color:var(--slate);text-align:center">© 2026 Mehul Parmar. All rights reserved. This Disclaimer is effective as of the date shown above.</p>
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Mehul Parmar</h4>
+        <p>Business Development Executive, career mentor, and revenue cycle partner for US healthcare practices. Helping people and businesses grow without the chaos.</p>
+        <div class="socials">
+          <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="mailto:kumarmehul48@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kumarmehul181/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/kumarmehul48" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.facebook.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Calendly">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Greater Ahmedabad Area, India</li>
+          <li>📧 <a href="mailto:kumarmehul48@gmail.com">kumarmehul48@gmail.com</a></li>
+          <li>📱 <a href="tel:+917043795279">+91 70437 95279</a></li>
+          <li>💬 <a
