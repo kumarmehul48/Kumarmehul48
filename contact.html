@@ -523,7 +523,7 @@ document.getElementById("contactForm").addEventListener("submit",async e=>{
   btn.disabled=true; btn.textContent="Sending...";
   let saved=false;
   try{
-    const r=await fetch("https://superagent-d1c2e2a1.base44.app/functions/mehulSubmitLead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,email,phone,practice,interest,pain_point:interest,message})});
+    const r=await fetch("https://superagent-d1c2e2a1.base44.app/functions/mehulSubmitLead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,email,phone,practice,interest,pain_point:interest,message,source_page:'contact-page'})});
     const d=await r.json(); saved=d.ok===true;
   }catch(err){saved=false;}
   // open WhatsApp with prefilled message regardless of save status
