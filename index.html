@@ -5,58 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mehul Parmar | RCM Partner, Business Coach & AI Mentor</title>
 <meta name="description" content="Helping US providers collect revenue, small businesses build online presence, and professionals learn AI skills.">
-<link rel="icon" type="image/png" href="MPbanner.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#1e3a8a;--brand:#2563eb;--brand2:#1e40af;--accent:#93c5fd;--slate:#475569;--border:#e2e8f0;--light:#f8fafc;}
+  :root{--navy:#0f172a;--brand:#059669;--brand2:#047857;--accent:#fbbf24;--slate:#475569;--border:#e2e8f0;--light:#f0fdfa;}
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{font-family:'Inter',system-ui,sans-serif;color:#1e3a8a;background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#0f172a;background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased;}
   img{max-width:100%;display:block;height:auto;}
+  h1,h2,h3,.hero h1,.section-title{font-family:'Manrope','Inter',sans-serif;}
   a{color:inherit;text-decoration:none;}
   ul{list-style:none;}
   .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%;}
 
   /* NAV */
-  .nav{position:sticky;top:0;z-index:100;background:rgba(30,58,138,.98);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
+  .nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.97);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
   .nav-logo{font-weight:800;font-size:1rem;color:#fff;white-space:nowrap;}
   .nav-logo span{color:var(--accent);}
   .nav-links{display:flex;align-items:center;gap:4px;}
-  .nav-btn{color:#93c5fd;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;transition:background .2s,color .2s;white-space:nowrap;}
+  .nav-btn{color:#6ee7b7;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;transition:background .2s,color .2s;white-space:nowrap;}
   .nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
-  .nav-cta{margin-left:8px;background:#fff;color:var(--brand2);padding:8px 16px;border-radius:8px;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap;}
-  .nav-cta:hover{background:#eff6ff;}
+  .nav-cta{margin-left:8px;background:#fbbf24;color:#0f172a;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap;}
+  .nav-cta:hover{background:#fcd34d;}
   .nav-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0;}
   .nav-mobile{display:none;border-top:1px solid rgba(255,255,255,.1);background:var(--navy);}
   .nav-mobile.open{display:block;}
   .nav-mobile-inner{padding:12px 20px 20px;}
-  .nav-mobile a{display:block;width:100%;padding:12px 16px;border-radius:8px;color:#93c5fd;font-weight:600;font-size:.95rem;text-align:left;}
+  .nav-mobile a{display:block;width:100%;padding:12px 16px;border-radius:8px;color:#6ee7b7;font-weight:600;font-size:.95rem;text-align:left;}
   .nav-mobile a:hover{background:rgba(255,255,255,.08);color:#fff;}
-  .nav-mobile .nav-cta{display:block;text-align:center;margin:8px 0 0;background:#fff;color:var(--brand2);}
+  .nav-mobile .nav-cta{display:block;text-align:center;margin:8px 0 0;background:#fbbf24;color:#0f172a;}
   @media(max-width:860px){
     .nav-links{display:none;}
     .nav-toggle{display:block;}
   }
 
   /* HERO */
-  .hero{background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 60%,#2563eb 100%);color:#fff;padding:80px 0 100px;text-align:center;overflow:hidden;position:relative;}
-  .hero::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(147,197,253,.15),transparent 70%);border-radius:50%;pointer-events:none;}
+  .hero{background:linear-gradient(135deg,#022c22 0%,#042f2e 40%,#064e3b 75%,#065f46 100%);color:#fff;padding:80px 0 100px;text-align:center;overflow:hidden;position:relative;}
+  .hero::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(251,191,36,.14),transparent 70%);border-radius:50%;pointer-events:none;}
   .hero-inner{max-width:860px;margin:0 auto;position:relative;z-index:1;}
-  .badge{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:var(--accent);padding:6px 16px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.6px;margin-bottom:24px;}
+  .badge{display:inline-block;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.4);color:var(--accent);padding:6px 16px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.6px;margin-bottom:24px;}
   .hero h1{font-size:2.75rem;line-height:1.12;font-weight:800;margin-bottom:20px;letter-spacing:-.015em;}
   .hero h1 span{color:var(--accent);}
-  .hero p.kicker{font-size:1.15rem;color:#dbeafe;font-weight:600;margin-bottom:16px;max-width:680px;margin-left:auto;margin-right:auto;}
-  .hero p.lead{font-size:1rem;color:#bfdbfe;margin-bottom:32px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .hero p.kicker{font-size:1.15rem;color:#a7f3d0;font-weight:600;margin-bottom:16px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .hero p.lead{font-size:1rem;color:#6ee7b7;margin-bottom:32px;max-width:680px;margin-left:auto;margin-right:auto;}
   .hero .btn-group{justify-content:center;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;max-width:1080px;margin:0 auto;position:relative;z-index:1;text-align:left;}
+  .hero-photo{display:flex;justify-content:center;}
+  .hero-photo img{width:300px;height:300px;max-width:100%;border-radius:24px;object-fit:cover;border:4px solid rgba(255,255,255,.18);box-shadow:0 30px 60px rgba(2,8,32,.45);}
+  .hero-photo-frame{position:relative;}
+  .hero-photo-frame::before{content:"";position:absolute;inset:-18px;border:1px solid rgba(147,197,253,.35);border-radius:32px;pointer-events:none;}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:40px;text-align:center;}.hero .btn-group{justify-content:center;}.hero h1,.hero p.kicker,.hero p.lead{margin-left:auto;margin-right:auto;}.hero-photo img{width:220px;height:220px;}}
+
 
   /* BUTTONS */
   .btn-group{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:12px;font-weight:700;font-size:.93rem;transition:transform .2s,background .2s;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;}
-  .btn-wa{background:#22c55e;color:#fff;box-shadow:0 4px 14px rgba(34,197,94,.3);}
-  .btn-wa:hover{background:#16a34a;transform:translateY(-2px);}
-  .btn-white{background:#fff;color:var(--brand2);box-shadow:0 4px 14px rgba(0,0,0,.25);}
-  .btn-white:hover{background:#eff6ff;transform:translateY(-2px);}
+  .btn-wa{background:#25d366;color:#fff;box-shadow:0 4px 14px rgba(34,197,94,.3);}
+  .btn-wa:hover{background:#1eb85a;transform:translateY(-2px);}
+  .btn-white{background:#fbbf24;color:#0f172a;box-shadow:0 4px 18px rgba(251,191,36,.35);}
+  .btn-white:hover{background:#fcd34d;transform:translateY(-2px);}
   .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);}
   .btn-ghost:hover{background:rgba(255,255,255,.1);}
   .btn-brand{background:var(--brand);color:#fff;}
@@ -66,10 +74,10 @@
   .py-24{padding:96px 0;}
   .bg-light{background:var(--light);}
   .bg-dark{background:var(--navy);color:#fff;}
-  .bg-brand-grad{background:linear-gradient(135deg,#1e40af 0%,#2563eb 100%);color:#fff;}
+  .bg-brand-grad{background:linear-gradient(135deg,#047857 0%,#059669 100%);color:#fff;}
   .section-title{font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:12px;letter-spacing:-.01em;}
   .section-sub{color:var(--slate);margin-bottom:44px;max-width:720px;font-size:1rem;}
-  .bg-dark .section-sub{color:#bfdbfe;}
+  .bg-dark .section-sub{color:#a7f3d0;}
   .bg-dark .section-title{color:#fff;}
 
   /* GRIDS */
@@ -79,8 +87,8 @@
 
   /* PILLARS */
   .pillar{background:#fff;border:1px solid var(--border);border-radius:18px;padding:30px;transition:box-shadow .25s,transform .25s;}
-  .pillar:hover{box-shadow:0 12px 32px rgba(30,58,138,.1);transform:translateY(-3px);}
-  .pillar-ico{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#2563eb,#93c5fd);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px;}
+  .pillar:hover{box-shadow:0 12px 32px rgba(15,23,42,.1);transform:translateY(-3px);}
+  .pillar-ico{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#059669,#fbbf24);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px;}
   .pillar h3{font-size:1.15rem;font-weight:800;margin-bottom:10px;color:var(--navy);}
   .pillar p{font-size:.92rem;color:var(--slate);margin-bottom:16px;}
   .pillar ul{margin-bottom:20px;}
@@ -91,7 +99,7 @@
 
   /* CARDS */
   .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;transition:box-shadow .25s,transform .25s;}
-  .card:hover{box-shadow:0 8px 24px rgba(30,58,138,.08);transform:translateY(-2px);}
+  .card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08);transform:translateY(-2px);}
   .card .big{font-size:2rem;font-weight:800;color:var(--brand);margin-bottom:8px;line-height:1.1;}
   .card h4{font-size:.95rem;font-weight:700;margin-bottom:6px;color:var(--navy);}
   .card p{font-size:.875rem;color:var(--slate);}
@@ -100,30 +108,30 @@
   .leak{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-left:5px solid var(--accent);border-radius:13px;padding:22px;}
   .leak .ln{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:1.2px;margin-bottom:6px;}
   .leak h4{font-size:1.05rem;font-weight:700;margin-bottom:8px;}
-  .leak p{font-size:.875rem;color:#bfdbfe;}
+  .leak p{font-size:.875rem;color:#a7f3d0;}
   .leak-wide{grid-column:1/-1;}
   .verdict{text-align:center;color:var(--accent);font-weight:800;font-size:1.1rem;margin-top:40px;}
 
   /* CTA */
   .cta-center{text-align:center;max-width:740px;margin:0 auto;}
   .cta-center h2{font-size:2rem;font-weight:800;margin-bottom:14px;letter-spacing:-.01em;}
-  .cta-center p{color:#dbeafe;margin-bottom:28px;font-size:1rem;}
+  .cta-center p{color:#a7f3d0;margin-bottom:28px;font-size:1rem;}
   .cta-center .btn-group{justify-content:center;}
 
   /* FOOTER */
-  footer{background:var(--navy);color:#bfdbfe;padding:60px 0 30px;}
+  footer{background:var(--navy);color:#a7f3d0;padding:60px 0 30px;}
   .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;margin-bottom:40px;}
   footer h4{color:#fff;font-weight:700;font-size:.9rem;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
   footer p{font-size:.875rem;line-height:1.7;}
   footer li{padding:5px 0;}
-  footer li a{font-size:.875rem;color:#bfdbfe;transition:color .2s;}
+  footer li a{font-size:.875rem;color:#a7c4ba;transition:color .2s;}
   footer li a:hover{color:#fff;}
   footer .socials{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
   footer .socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;}
   footer .socials a:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
   footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:32px;text-align:center;font-size:.85rem;color:#94a3b8;}
   footer .legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px;}
-  footer .legal-links a{color:#93c5fd;font-size:.85rem;}
+  footer .legal-links a{color:#6ee7b7;font-size:.85rem;}
   footer .legal-links a:hover{color:#fff;}
 
   /* RESPONSIVE */
@@ -161,6 +169,7 @@
       <a href="services.html" class="nav-btn">Services</a>
       <a href="about.html" class="nav-btn">About</a>
       <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="track.html" class="nav-btn">Track</a>
       <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
     </div>
 
@@ -179,6 +188,7 @@
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="track.html">Track Your Request</a>
       <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
     </div>
   </div>
@@ -186,17 +196,24 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="container hero-inner">
-    <span class="badge">BUSINESS DEVELOPMENT EXECUTIVE · MENTOR · REVENUE PARTNER</span>
-    <h1>Helping You Focus on<br><span>What You Do Best.</span></h1>
-    <p class="kicker">Revenue for US providers. Online presence for small businesses. Direction for careers. Skills for the AI era.</p>
-    <p class="lead">15+ years of experience across healthcare RCM, business development, and mentorship — helping people and practices grow without the operational chaos.</p>
-    <div class="btn-group">
-      <a class="btn btn-wa" href="https://wa.me/917043795279" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-        WhatsApp Now
-      </a>
-      <a class="btn btn-white" href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener">Book a Free Call</a>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="badge">BUSINESS DEVELOPMENT EXECUTIVE · MENTOR · REVENUE PARTNER</span>
+        <h1>Helping You Focus on<br><span>What You Do Best.</span></h1>
+        <p class="kicker">Revenue for US providers. Online presence for small businesses. Direction for careers. Skills for the AI era.</p>
+        <p class="lead">15+ years of experience across healthcare RCM, business development, and mentorship — helping people and practices grow without the operational chaos.</p>
+        <div class="btn-group">
+          <a class="btn btn-wa" href="https://wa.me/917043795279" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp Now
+          </a>
+          <a class="btn btn-white" href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener">Book a Free Call</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-frame"><img src="mehul-photo.webp" alt="Mehul Parmar — Business Development Executive" width="720" height="720"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -267,27 +284,27 @@
 <section class="py-24">
   <div class="container">
     <h2 class="section-title">For US Healthcare Providers</h2>
-    <p class="section-sub">Your job is patients. My job is everything between the visit and the payment.</p>
+    <p class="section-sub">You trained to treat patients. The system makes you chase claims, fight payers, and babysit billing staff. That's the part I take off your plate — completely.</p>
 
     <div class="grid-3">
       <div class="card">
-        <div class="big">12–15%</div>
-        <h4>of claims denied on first submission</h4>
-        <p>Every one costs money to rework.</p>
-      </div>
-      <div class="card">
-        <div class="big">10–20%</div>
-        <h4>of collectible revenue simply lost</h4>
-        <p>Denials, underpayments, aged A/R.</p>
-      </div>
-      <div class="card">
         <div class="big">~30%</div>
-        <h4>annual billing-staff turnover</h4>
-        <p>Your revenue process resets to zero.</p>
+        <h4>of claims denied on first submission</h4>
+        <p>Industry benchmark is 5–10%. Most practices are far past it — and don't know why.</p>
+      </div>
+      <div class="card">
+        <div class="big">$48B</div>
+        <h4>lost to denials in one year (US hospitals)</h4>
+        <p>Most of it recoverable. Most of it never recovered.</p>
+      </div>
+      <div class="card">
+        <div class="big">13 hrs</div>
+        <h4>per week burned on prior authorizations</h4>
+        <p>39–45 PAs per physician, weekly. That's patient hours you never get back.</p>
       </div>
     </div>
 
-    <p style="margin-top:32px;color:var(--slate)">If any of these feel familiar, your practice is leaking revenue right now — invisibly.</p>
+    <p style="margin-top:32px;color:var(--slate)">41% of providers now report denial rates above 10%. If your collections feel tighter every year while you work harder — this is why.</p>
 
     <div class="btn-group" style="margin-top:24px">
       <a class="btn btn-brand" href="services.html#healthcare">See How I Fix It →</a>
@@ -298,38 +315,50 @@
 <!-- ============ LEAKS ============ -->
 <section class="py-24 bg-dark">
   <div class="container">
-    <h2 class="section-title">The 5 Silent Revenue Leaks</h2>
-    <p class="section-sub">Not big dramatic events. Small, invisible leaks — every single day.</p>
+    <h2 class="section-title">Sound Familiar, Doctor?</h2>
+    <p class="section-sub">These aren't abstract industry problems. They're the six things I hear from every practice owner I talk to — and quietly fix.</p>
 
     <div class="grid-2">
       <div class="leak">
-        <div class="ln">LEAK 01</div>
-        <h4>Denials quietly written off</h4>
-        <p>Up to 90% recoverable — most practices never resubmit.</p>
+        <div class="ln">PAIN 01</div>
+        <h4>"Denials come back and just get written off"</h4>
+        <p>Up to 90% of denials are recoverable — but most practices never resubmit. Each denied claim also costs $25+ to rework, so staff avoids the pile. The money stays lost.</p>
       </div>
       <div class="leak">
-        <div class="ln">LEAK 02</div>
-        <h4>Underpayments never checked</h4>
-        <p>Payers pay less than contracted rates. Nobody checks.</p>
+        <div class="ln">PAIN 02</div>
+        <h4>"I'm doing prior auths at 9 pm"</h4>
+        <p>Physicians complete 39–45 PAs per week, eating 13+ hours. 88% say it delays patient care. It's the #1 burnout driver after documentation.</p>
       </div>
       <div class="leak">
-        <div class="ln">LEAK 03</div>
-        <h4>A/R aging nobody works</h4>
-        <p>After 90 days, collectability collapses.</p>
+        <div class="ln">PAIN 03</div>
+        <h4>"Payers short me and I can't tell"</h4>
+        <p>Underpayments never bounce a claim — they just pay less than contracted. Nobody audits 835s against your fee schedules. It's invisible loss, every single check.</p>
       </div>
       <div class="leak">
-        <div class="ln">LEAK 04</div>
-        <h4>Eligibility &amp; credentialing gaps</h4>
-        <p>Claims denied before submission.</p>
+        <div class="ln">PAIN 04</div>
+        <h4>"My A/R is a graveyard after 90 days"</h4>
+        <p>After 90 days, collectability collapses. Commercial collection rates have dropped to 34–48%. Old claims sit, staff focuses on new ones, and the cycle repeats.</p>
+      </div>
+      <div class="leak">
+        <div class="ln">PAIN 05</div>
+        <h4>"My biller quit and took the process with her"</h4>
+        <p>~30% annual billing-staff turnover. When your biller leaves, your revenue engine resets to zero while you hire, train, and bleed during the gap.</p>
       </div>
       <div class="leak leak-wide">
-        <div class="ln">LEAK 05</div>
-        <h4>Revenue lives in one person's head</h4>
-        <p>~30% turnover resets everything.</p>
+        <div class="ln">PAIN 06</div>
+        <h4>"I don't actually know what I'm owed"</h4>
+        <p>No clean monthly numbers: collections, denials, aging, per-payer. You find out about a bad month two months late — from your bank balance, not a report.</p>
       </div>
     </div>
 
-    <p class="verdict">If two or more feel familiar — your practice is bleeding cash right now.</p>
+    <p class="verdict">If two or more of these feel like your practice — we should talk this week, not someday.</p>
+
+    <div class="btn-group cta-center" style="justify-content:center;margin-top:28px">
+      <a class="btn btn-wa" href="https://wa.me/917043795279" target="_blank" rel="noopener">Message Me on WhatsApp</a>
+      <a class="btn btn-white" href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener">Book a Free A/R Review</a>
+    </div>
+
+    <p style="text-align:center;color:#a7f3d0;margin-top:16px;font-size:.85rem">A free 15-minute call — I'll show you exactly where your revenue is leaking. You decide after.</p>
   </div>
 </section>
 
@@ -383,22 +412,22 @@
         <p>Business Development Executive, career mentor, and revenue cycle partner for US healthcare practices. Helping people and businesses grow without the chaos.</p>
         <div class="socials">
           <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           </a>
           <a href="mailto:kumarmehul48@gmail.com" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/kumarmehul181/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
           <a href="https://github.com/kumarmehul48" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
           <a href="https://www.facebook.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
           <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Calendly">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </a>
         </div>
       </div>
@@ -410,6 +439,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="track.html">Track Your Request</a></li>
         </ul>
       </div>
 
@@ -444,7 +474,11 @@
       <p>© 2026 Mehul Parmar. All rights reserved. · Serving clients globally from India.</p>
     </div>
   </div>
-</footer>
+
+  <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="wa-float">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.3 7L4 29l7.2-2.2c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.4 12-12S23.1 3 16.6 3H16zm.1 22.4c-2 0-3.9-.5-5.5-1.6l-.4-.2-4.3 1.3 1.3-4.2-.3-.4C5.6 18.6 5 16.9 5 15c0-6 4.9-10.9 11-10.9h.1c6 0 10.9 4.9 10.9 10.9s-4.9 10.4-10.9 10.4zm6.2-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.2-.2-.5-.3z"/></svg>
+  </a>
+  <style>.wa-float{position:fixed;bottom:22px;right:22px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25d366;box-shadow:0 8px 24px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;}.wa-float:hover{transform:scale(1.08);}</style></footer>
 
 <script>
   (function(){
