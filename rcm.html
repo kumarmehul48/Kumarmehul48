@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RCM Funnel — Revenue Infrastructure for US Practices | Mehul Parmar</title>
+<meta name="description" content="US medical practices lose 10-20% of revenue to denials, underpayments and unworked A/R. Dedicated RCM partner: 24-hr claim submission, 48-hr denial follow-up, weekly A/R recovery.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root{--navy:#0f172a;--brand:#059669;--brand2:#047857;--accent:#fbbf24;--slate:#9fb0c8;--border:#2c3b53;--light:#0e1626;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#e6edf5;background:#0b1220;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;height:auto;}
+  h1,h2,h3,.hero h1,.section-title{font-family:'Manrope','Inter',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%;}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.97);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+  .nav-logo{font-weight:800;font-size:1rem;color:#fff;white-space:nowrap;}
+  .nav-logo span{color:var(--accent);}
+  .nav-links{display:flex;align-items:center;gap:4px;}
+  .nav-btn{color:#6ee7b7;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;transition:background .2s,color .2s;white-space:nowrap;}
+  .nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
+  .nav-cta{margin-left:8px;background:#fbbf24;color:#0f172a;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap;}
+  .nav-cta:hover{background:#fcd34d;}
+  .nav-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0;}
+  .nav-mobile{display:none;border-top:1px solid rgba(255,255,255,.1);background:var(--navy);}
+  .nav-mobile.open{display:block;}
+  .nav-mobile-inner{padding:12px 20px 20px;}
+  .nav-mobile a{display:block;width:100%;padding:12px 16px;border-radius:8px;color:#6ee7b7;font-weight:600;font-size:.95rem;text-align:left;}
+  .nav-mobile a:hover{background:rgba(255,255,255,.08);color:#fff;}
+  .nav-mobile .nav-cta{display:block;text-align:center;margin:8px 0 0;background:#fbbf24;color:#0f172a;}
+  @media(max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,#022c22 0%,#042f2e 40%,#064e3b 75%,#065f46 100%);color:#fff;padding:80px 0 100px;text-align:center;overflow:hidden;position:relative;}
+  .hero::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(251,191,36,.14),transparent 70%);border-radius:50%;pointer-events:none;}
+  .hero-inner{max-width:860px;margin:0 auto;position:relative;z-index:1;}
+  .badge{display:inline-block;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.4);color:var(--accent);padding:6px 16px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.6px;margin-bottom:24px;}
+  .hero h1{font-size:2.75rem;line-height:1.12;font-weight:800;margin-bottom:20px;letter-spacing:-.015em;}
+  .hero h1 span{color:var(--accent);}
+  .hero p.kicker{font-size:1.15rem;color:#a7f3d0;font-weight:600;margin-bottom:16px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .hero p.lead{font-size:1rem;color:#6ee7b7;margin-bottom:32px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .hero .btn-group{justify-content:center;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;max-width:1080px;margin:0 auto;position:relative;z-index:1;text-align:left;}
+  .hero-photo{display:flex;justify-content:center;}
+  .hero-photo img{width:300px;height:300px;max-width:100%;border-radius:24px;object-fit:cover;border:4px solid rgba(255,255,255,.18);box-shadow:0 30px 60px rgba(2,8,32,.45);}
+  .hero-photo-frame{position:relative;}
+  .hero-photo-frame::before{content:"";position:absolute;inset:-18px;border:1px solid rgba(147,197,253,.35);border-radius:32px;pointer-events:none;}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:40px;text-align:center;}.hero .btn-group{justify-content:center;}.hero h1,.hero p.kicker,.hero p.lead{margin-left:auto;margin-right:auto;}.hero-photo img{width:220px;height:220px;}}
+
+
+  /* BUTTONS */
+  .btn-group{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:12px;font-weight:700;font-size:.93rem;transition:transform .2s,background .2s;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;}
+  .btn-wa{background:#25d366;color:#fff;box-shadow:0 4px 14px rgba(34,197,94,.3);}
+  .btn-wa:hover{background:#1eb85a;transform:translateY(-2px);}
+  .btn-white{background:#fbbf24;color:#0f172a;box-shadow:0 4px 18px rgba(251,191,36,.35);}
+  .btn-white:hover{background:#fcd34d;transform:translateY(-2px);}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+  .btn-brand{background:var(--brand);color:#fff;}
+  .btn-brand:hover{background:var(--brand2);transform:translateY(-2px);}
+
+  /* SECTIONS */
+  .py-24{padding:96px 0;}
+  .bg-light{background:var(--light);}
+  .bg-dark{background:var(--navy);color:#fff;}
+  .bg-brand-grad{background:linear-gradient(135deg,#047857 0%,#059669 100%);color:#fff;}
+  .section-title{font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:12px;letter-spacing:-.01em;}
+  .section-sub{color:var(--slate);margin-bottom:44px;max-width:720px;font-size:1rem;}
+  .bg-dark .section-sub{color:#a7f3d0;}
+  .bg-dark .section-title{color:#fff;}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+
+  /* PILLARS */
+  .pillar{background:#141f35;border:1px solid var(--border);border-radius:18px;padding:30px;transition:box-shadow .25s,transform .25s;}
+  .pillar:hover{box-shadow:0 12px 32px rgba(15,23,42,.1);transform:translateY(-3px);}
+  .pillar-ico{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#059669,#fbbf24);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px;}
+  .pillar h3{font-size:1.15rem;font-weight:800;margin-bottom:10px;color:#ffffff;}
+  .pillar p{font-size:.92rem;color:var(--slate);margin-bottom:16px;}
+  .pillar ul{margin-bottom:20px;}
+  .pillar li{font-size:.88rem;color:var(--slate);padding:5px 0 5px 20px;position:relative;}
+  .pillar li::before{content:"✓";color:var(--brand);font-weight:800;position:absolute;left:0;}
+  .pillar-link{color:var(--brand2);font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;transition:gap .2s;}
+  .pillar-link:hover{gap:10px;}
+
+  /* CARDS */
+  .card{background:#141f35;border:1px solid var(--border);border-radius:16px;padding:24px;transition:box-shadow .25s,transform .25s;}
+  .card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08);transform:translateY(-2px);}
+  .card .big{font-size:2rem;font-weight:800;color:var(--brand);margin-bottom:8px;line-height:1.1;}
+  .card h4{font-size:.95rem;font-weight:700;margin-bottom:6px;color:#ffffff;}
+  .card p{font-size:.875rem;color:var(--slate);}
+
+  /* LEAKS */
+  .leak{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-left:5px solid var(--accent);border-radius:13px;padding:22px;}
+  .leak .ln{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:1.2px;margin-bottom:6px;}
+  .leak h4{font-size:1.05rem;font-weight:700;margin-bottom:8px;}
+  .leak p{font-size:.875rem;color:#a7f3d0;}
+  .leak-wide{grid-column:1/-1;}
+  .verdict{text-align:center;color:var(--accent);font-weight:800;font-size:1.1rem;margin-top:40px;}
+
+  /* CTA */
+  .cta-center{text-align:center;max-width:740px;margin:0 auto;}
+  .cta-center h2{font-size:2rem;font-weight:800;margin-bottom:14px;letter-spacing:-.01em;}
+  .cta-center p{color:#a7f3d0;margin-bottom:28px;font-size:1rem;}
+  .cta-center .btn-group{justify-content:center;}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:#a7f3d0;padding:60px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;margin-bottom:40px;}
+  footer h4{color:#fff;font-weight:700;font-size:.9rem;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
+  footer p{font-size:.875rem;line-height:1.7;}
+  footer li{padding:5px 0;}
+  footer li a{font-size:.875rem;color:#a7c4ba;transition:color .2s;}
+  footer li a:hover{color:#fff;}
+  footer .socials{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  footer .socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;}
+  footer .socials a:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
+  footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:32px;text-align:center;font-size:.85rem;color:#94a3b8;}
+  footer .legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px;}
+  footer .legal-links a{color:#6ee7b7;font-size:.85rem;}
+  footer .legal-links a:hover{color:#fff;}
+
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .hero{padding:60px 0 72px;}
+    .hero h1{font-size:2rem;}
+    .hero p.kicker{font-size:1.05rem;}
+    .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
+    .section-title{font-size:1.5rem;}
+    .py-24{padding:64px 0;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
+    footer .socials{justify-content:center;}
+    .btn{width:100%;max-width:280px;}
+    .btn-group{flex-direction:column;align-items:center;}
+  }
+  @media(max-width:480px){
+    .hero h1{font-size:1.7rem;}
+    .section-title{font-size:1.35rem;}
+    .pillar{padding:22px;}
+    .card{padding:20px;}
+    .container{padding:0 16px;}
+    .hero{padding:48px 0 60px;}
+  }
+
+  /* RCM PAGE */
+  .rcm-hero{padding:88px 0 96px;text-align:center;}
+  .scene{max-width:780px;margin:0 auto 56px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-left:5px solid var(--accent);border-radius:16px;padding:34px 34px 28px;text-align:left;}
+  .scene .st{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:1.4px;margin-bottom:14px;}
+  .scene p{font-size:1.02rem;color:#d7e3f2;margin-bottom:14px;}
+  .scene p strong{color:#fff;}
+  .stat{background:#141f35;border:1px solid var(--border);border-radius:16px;padding:26px 22px;text-align:left;}
+  .stat .big{font-size:2.1rem;font-weight:800;color:var(--accent);line-height:1.05;margin-bottom:8px;}
+  .stat p{font-size:.85rem;color:#9fb0c8;}
+  .sources{font-size:.75rem;color:#64748b;margin-top:22px;text-align:center;}
+  .hard{background:#141f35;border:1px solid var(--border);border-radius:14px;padding:26px;}
+  .hard .hn{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#059669,#fbbf24);color:#0f172a;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1rem;margin-bottom:14px;}
+  .hard h4{font-size:1.02rem;font-weight:800;margin-bottom:8px;color:#fff;}
+  .hard p{font-size:.88rem;color:#9fb0c8;}
+  .hard em{color:#6ee7b7;font-style:normal;font-weight:700;}
+  .step{background:#141f35;border:1px solid var(--border);border-radius:14px;padding:24px;position:relative;}
+  .step .sn{font-size:10.5px;font-weight:800;color:var(--accent);letter-spacing:1.3px;margin-bottom:8px;}
+  .step h4{font-size:1rem;font-weight:800;margin-bottom:6px;color:#fff;}
+  .step p{font-size:.86rem;color:#9fb0c8;}
+  .sla{display:inline-block;margin-top:12px;background:rgba(16,185,129,.16);border:1px solid rgba(16,185,129,.4);color:#6ee7b7;font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:999px;}
+  .speed-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;text-align:center;}
+  .speed-strip .ss{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px 12px;}
+  .speed-strip .ss b{display:block;font-size:1.5rem;color:var(--accent);font-weight:800;}
+  .speed-strip .ss span{font-size:.8rem;color:#a7f3d0;}
+  .fixcard{background:#141f35;border:1px solid var(--border);border-left:5px solid var(--brand);border-radius:14px;padding:24px;}
+  .fixcard .fx{font-size:10.5px;font-weight:800;color:#6ee7b7;letter-spacing:1.2px;margin-bottom:8px;}
+  .fixcard h4{font-size:1rem;font-weight:800;color:#fff;margin-bottom:6px;}
+  .fixcard p{font-size:.86rem;color:#9fb0c8;}
+  .rev{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:26px;text-align:center;}
+  .rev .rn{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#059669,#fbbf24);color:#0f172a;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin:0 auto 14px;}
+  .rev h4{font-size:.98rem;font-weight:800;color:#fff;margin-bottom:6px;}
+  .rev p{font-size:.85rem;color:#9fb0c8;}
+  .illus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:48px 0 8px;}
+  .illus-grid img{border-radius:14px;border:1px solid rgba(255,255,255,.14);width:100%;height:150px;object-fit:cover;}
+  .check-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:26px auto 34px;max-width:640px;text-align:left;}
+  .check-list div{font-size:.92rem;color:#d7e3f2;padding:8px 0 8px 28px;position:relative;}
+  .check-list div::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800;}
+  .enq-form{max-width:640px;margin:0 auto;background:#141f35;border:1px solid var(--border);border-radius:18px;padding:34px;text-align:left;}
+  .enq-form h3{font-size:1.2rem;font-weight:800;color:#fff;margin-bottom:4px;}
+  .enq-form .fh{font-size:.85rem;color:#9fb0c8;margin-bottom:22px;}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .enq-form input,.enq-form select,.enq-form textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:.95rem;font-family:inherit;background:#0b1220;color:#e6edf5;margin-bottom:14px;}
+  .enq-form input:focus,.enq-form select:focus,.enq-form textarea:focus{outline:none;border-color:var(--brand);}
+  .enq-form .fb{width:100%;margin-top:4px;}
+  .hipaa{font-size:.72rem;color:#64748b;text-align:center;margin-top:14px;}
+  @media(max-width:900px){.speed-strip{grid-template-columns:repeat(2,1fr);}.illus-grid{grid-template-columns:repeat(2,1fr);}.check-list{grid-template-columns:1fr;}.frow{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Mehul <span>Parmar</span></a>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="services.html" class="nav-btn">Services</a> <a href="rcm.html" class="nav-btn active">RCM</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="track.html" class="nav-btn">Track</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="4" y1="12" x2="20" y2="12"/>
+        <line x1="4" y1="18" x2="20" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <div class="nav-mobile-inner">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a> <a href="rcm.html">RCM</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="track.html">Track Your Request</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero rcm-hero">
+  <div class="hero-inner">
+    <div class="badge">RCM &amp; MEDICAL BILLING PARTNER FOR US PRACTICES</div>
+    <h1>Revenue Is Not Finance.<br><span>It's Infrastructure.</span></h1>
+    <p class="kicker">Most practices don't have a billing problem. They have a revenue cycle nobody owns.</p>
+    <p class="lead">And it quietly costs them 10–20% of everything they earn — in denials written off, underpayments never checked, and aged claims nobody works.</p>
+    <div class="btn-group" style="justify-content:center">
+      <a class="btn btn-wa" href="https://wa.me/917043795279" target="_blank" rel="noopener">Message Mehul on WhatsApp</a>
+      <a class="btn btn-ghost" href="#scene">First — see if this is your practice ↓</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-24" style="padding-top:0">
+  <div class="container">
+    <div class="scene" id="scene">
+      <div class="st">TUESDAY · 6:40 PM · YOUR PRACTICE</div>
+      <p>Front desk went home at 5. You're still here, staring at a payer portal. <strong>Claim denied. Again.</strong> Your biller says "it's the payer." The payer says "it's the coding." Nobody actually knows.</p>
+      <p>Meanwhile: three patients need follow-ups, a stack of authorizations is waiting, the A/R report hasn't been opened in weeks — and tomorrow morning, you're seeing patients at 8 AM sharp.</p>
+      <p><strong>Sound familiar? That's not bad luck. That's a revenue cycle without an owner.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">This is what practices are up against in 2025</h2>
+    <p class="section-sub">These aren't opinions. This is what industry data says is happening to practices like yours right now.</p>
+    <div class="grid-3">
+      <div class="stat"><div class="big">12–15%</div><p>of claims denied on first submission — up from 11.8% in 2024, past 15% in many specialties. Every one costs money to rework.</p></div>
+      <div class="stat"><div class="big">$57–$125</div><p>cost to rework a single denied claim. Staff time, calls, resubmission. Denials you don't fight are written off — your revenue.</p></div>
+      <div class="stat"><div class="big">12 hrs</div><p>burned per week on prior authorizations. 92%+ of physicians say PA drives burnout. It's the #1 reason claims die before submission.</p></div>
+      <div class="stat"><div class="big">10–20%</div><p>of collectible revenue simply lost — denials, underpayments, missed eligibility, aged-out A/R. Most practices never see the leak.</p></div>
+      <div class="stat"><div class="big">$72–140k</div><p>per year, per in-house biller. Salary, benefits, software, training — before the revenue you lose to their gaps.</p></div>
+      <div class="stat"><div class="big">~30%</div><p>annual billing-staff turnover. When your biller quits, your entire revenue process walks out the door with them.</p></div>
+    </div>
+    <p class="sources">Sources: CMS &amp; MGMA benchmarks, 2025 AMA Prior Authorization Survey, industry RCM studies.</p>
+  </div>
+</section>
+
+<section class="py-24">
+  <div class="container">
+    <h2 class="section-title">Why it feels so hard: running a practice in the USA today</h2>
+    <p class="section-sub">You're not imagining it. The system is genuinely stacked against small and solo practices. Here's what you're up against:</p>
+    <div class="grid-3">
+      <div class="hard"><div class="hn">1</div><h4>Payers deny as a business strategy</h4><p>Insurers know most practices lack the bandwidth to appeal. A percentage of legitimate claims gets denied on purpose — and every payer has a <em>timely-filing limit (often just 90–180 days)</em>. One slow month and that revenue is legally erased. Forever.</p></div>
+      <div class="hard"><div class="hn">2</div><h4>Prior authorization is a maze built to slow you</h4><p>Practices spend ~12 hours a week on PA requests. 93% of physicians say it delays care — and it's the top reason claims die before submission. Payers profit from the friction; you absorb the cost.</p></div>
+      <div class="hard"><div class="hn">3</div><h4>The staffing math doesn't work anymore</h4><p>A single in-house biller costs $72k–$140k all-in. Billing turnover runs ~30% a year. <em>You can't hire your way out</em> — and every resignation resets your revenue cycle to zero.</p></div>
+      <div class="hard"><div class="hn">4</div><h4>Reimbursement keeps shrinking</h4><p>Medicare cut physician payments another 2.83% in 2025 — while rent, wages and supplies climb. The margin that used to absorb billing leakage is gone.</p></div>
+      <div class="hard"><div class="hn">5</div><h4>Patients owe more than ever</h4><p>High-deductible plans shifted collections to your front desk. If patient balances aren't estimated, collected and followed up properly, <em>you're financing America's healthcare out of your own pocket.</em></p></div>
+      <div class="hard"><div class="hn">6</div><h4>Admin eats your clinical hours</h4><p>For every hour with a patient, US physicians spend nearly two on paperwork and admin — much of it after hours, at home. This is the burnout you feel but never quite name.</p></div>
+    </div>
+    <p class="section-sub" style="margin-bottom:0;margin-top:36px">None of this is your failure. It's a system built for hospitals, drop-shipped onto small practices. It runs on one question: <em style="color:var(--accent);font-style:normal;font-weight:800">who owns your revenue?</em></p>
+  </div>
+</section>
+
+<section class="py-24 bg-dark">
+  <div class="container">
+    <h2 class="section-title">The five leaks under your table</h2>
+    <p class="section-sub">Practices don't lose money in one dramatic event. It disappears in small, invisible, ongoing leaks — the ones nobody is paid to watch.</p>
+    <div class="grid-2">
+      <div class="leak"><div class="ln">LEAK 01</div><h4>Denials quietly written off</h4><p>Up to 90% of denials are recoverable — but most practices never resubmit them. The write-off becomes "normal" and the money is gone.</p><p style="color:#fbbf24;font-weight:700;margin-top:10px">Invisible loss: recoverable revenue abandoned</p></div>
+      <div class="leak"><div class="ln">LEAK 02</div><h4>Underpayments never checked</h4><p>Payers routinely pay less than your contracted rates. If nobody compares payments against contracts, you're financing the difference — forever.</p><p style="color:#fbbf24;font-weight:700;margin-top:10px">Invisible loss: contracted money never claimed</p></div>
+      <div class="leak"><div class="ln">LEAK 03</div><h4>A/R aging nobody works</h4><p>Best practice: under 20% of A/R past 90 days. Most stressed practices sit far above it. After 90 days, collectability collapses — every unworked day shrinks your money.</p><p style="color:#fbbf24;font-weight:700;margin-top:10px">Invisible loss: earned money aging into nothing</p></div>
+      <div class="leak"><div class="ln">LEAK 04</div><h4>Eligibility &amp; credentialing gaps</h4><p>Claims denied before submission even happens — lapsed eligibility checks, outdated payer enrollment, expired credentials. Pure preventable loss.</p><p style="color:#fbbf24;font-weight:700;margin-top:10px">Invisible loss: claims dead on arrival</p></div>
+      <div class="leak leak-wide"><div class="ln">LEAK 05 — THE STRUCTURAL ONE</div><h4>Your revenue process lives in one person's head</h4><p>With ~30% annual billing turnover, your revenue cycle restarts from zero every time your biller leaves. No documentation, no system, no owner — just chaos that repeats. This is why it never gets fixed: it's nobody's job until it's everybody's crisis.</p><p style="color:#fbbf24;font-weight:700;margin-top:10px">Invisible loss: every transition resets your revenue</p></div>
+    </div>
+    <p class="verdict">If two or more of these feel familiar, your practice is leaking money right now — you just can't see where.</p>
+  </div>
+</section>
+
+<section class="py-24">
+  <div class="container">
+    <h2 class="section-title">"Everyone is busy, so nobody is accountable"</h2>
+    <p class="section-sub">Your biller is busy. Your front desk is busy. Your office manager is busy. But "busy" is not a revenue strategy — and goodwill is not a denial-management plan. The practices that consistently collect what they earn aren't the ones with smarter staff. They're the ones with a <em style="color:var(--accent);font-style:normal;font-weight:800">system</em> — an owned, accountable, end-to-end revenue infrastructure that works whether or not anyone had a rough week.</p>
+    <div class="illus-grid">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/19605ade6_generated_image.png" alt="Doctor reviewing billing after hours">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/6c9e2ddb9_generated_image.png" alt="Denied claim on payer portal">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/75e6c6c38_generated_image.png" alt="Revenue cycle infrastructure">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/891112d38_generated_image.png" alt="Partner handling the revenue cycle">
+    </div>
+    <p class="sources">That's what I build. That's the only thing I do.</p>
+  </div>
+</section>
+
+<section class="py-24 bg-brand-grad">
+  <div class="container cta-center">
+    <h2>The shift: stop managing billing. Start running your practice.</h2>
+    <p>Your job is patients, growth and decisions. My job is everything that happens between the visit and the payment — eligibility, coding, submission, posting, denials, A/R recovery and plain-English reporting. One accountable partner. One system. Zero chaos for your team. When you want to know where your money is, you message me directly — no gatekeepers, no call centers, no ticket numbers.</p>
+    <div class="btn-group">
+      <a class="btn btn-white" href="#enquiry">Start With a Free Revenue Review</a>
+      <a class="btn btn-ghost" href="https://wa.me/917043795279" target="_blank" rel="noopener">WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">The whole RCM cycle — and my speed commitment at every step</h2>
+    <p class="section-sub">You don't need to understand billing. You need to know someone owns every step below — at a speed your in-house process can't match.</p>
+    <div class="grid-2">
+      <div class="step"><div class="sn">STEP 1 · BEFORE THE VISIT</div><h4>Scheduling &amp; eligibility verification</h4><p>Every patient's coverage and benefits are verified before they walk in. No surprises, no dead-on-arrival claims.</p></div>
+      <div class="step"><div class="sn">STEP 2 · BEFORE THE SERVICE</div><h4>Registration &amp; prior authorization</h4><p>Authorizations secured ahead of care — so treatment is never delayed and claims are never denied for a missing PA.</p></div>
+      <div class="step"><div class="sn">STEP 3 · SAME DAY</div><h4>Coding &amp; charge entry</h4><p>Specialty-aligned coding with compliance review done the same day — clean, audit-safe, first-pass ready claims.</p></div>
+      <div class="step"><div class="sn">STEP 4 · WITHIN 24 HOURS</div><h4>Claim submission</h4><p>Every scrubbed claim is submitted within 24 hours of the visit. Speed here is everything — it's the difference between cash flow and A/R.</p><span class="sla">SLA: 24 hrs</span></div>
+      <div class="step"><div class="sn">STEP 5 · SAME DAY</div><h4>Payment posting &amp; contract check</h4><p>Payments posted the day they arrive and compared against your contracted rates — underpayments caught immediately, not years later.</p></div>
+      <div class="step"><div class="sn">STEP 6 · WITHIN 48 HOURS</div><h4>Denial management &amp; appeals</h4><p>Every denial analyzed, worked and appealed within 48 hours. Nothing gets quietly written off — recoverable money is recovered.</p><span class="sla">SLA: 48 hrs</span></div>
+      <div class="step"><div class="sn">STEP 7 · EVERY WEEK</div><h4>A/R follow-up &amp; recovery</h4><p>Aging buckets worked systematically every week — before claims cross the 90-day point where money dies.</p><span class="sla">Weekly</span></div>
+      <div class="step"><div class="sn">STEP 8 · EVERY MONTH</div><h4>Transparent reporting</h4><p>A plain-English scorecard: collections, denial trends, A/R aging. You always know exactly where your money stands.</p><span class="sla">Monthly</span></div>
+    </div>
+    <div class="speed-strip">
+      <div class="ss"><b>24 hrs</b><span>claim submission</span></div>
+      <div class="ss"><b>48 hrs</b><span>denial follow-up</span></div>
+      <div class="ss"><b>Weekly</b><span>A/R recovery</span></div>
+      <div class="ss"><b>Monthly</b><span>plain-English reports</span></div>
+    </div>
+    <p class="verdict">Speed is the strategy. A claim submitted within 24 hours and followed up relentlessly doesn't age. It pays.</p>
+    <div class="btn-group" style="justify-content:center">
+      <a class="btn btn-brand" href="#enquiry">Put my claims on this clock →</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-24">
+  <div class="container">
+    <h2 class="section-title">Each leak gets a specific fix — not a generic "service"</h2>
+    <p class="section-sub">Everything I take off your table maps directly to a leak above.</p>
+    <div class="grid-3">
+      <div class="fixcard"><div class="fx">→ FIXES LEAK 01</div><h4>Denial management &amp; appeals</h4><p>Every denial analyzed, worked and appealed — recoverable money stops being written off.</p></div>
+      <div class="fixcard"><div class="fx">→ FIXES LEAK 02</div><h4>Payment vs. contract audit</h4><p>Posted payments compared against contracted rates. Underpayments identified, pursued and recovered.</p></div>
+      <div class="fixcard"><div class="fx">→ FIXES LEAK 03</div><h4>A/R recovery engine</h4><p>Aging buckets worked systematically — before claims pass the 90-day point of no return.</p></div>
+      <div class="fixcard"><div class="fx">→ FIXES LEAK 04</div><h4>Eligibility &amp; credentialing control</h4><p>Verification before every visit, payer enrollment kept current — claims arrive alive, not dead.</p></div>
+      <div class="fixcard"><div class="fx">→ FIXES LEAK 05</div><h4>System, not a person</h4><p>A documented, accountable revenue process that survives staff changes — your revenue never "restarts".</p></div>
+      <div class="fixcard"><div class="fx">→ RUNS ON TOP</div><h4>Clean-claim submission &amp; reporting</h4><p>Scrubbed, compliant coding for first-pass payment — plus plain-English reports so you always know where your money stands.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">Start with the free revenue review — 48 hours, zero obligation</h2>
+    <p class="section-sub">Before you commit to anything, you'll know exactly where your money is going. If I can't find you money, I'll tell you that too.</p>
+    <div class="grid-3">
+      <div class="rev"><div class="rn">1</div><h4>You send one message</h4><p>A 30-second form or a single WhatsApp text. Nothing sensitive required at this stage.</p></div>
+      <div class="rev"><div class="rn">2</div><h4>I audit your revenue cycle</h4><p>Denials, underpayments, A/R aging, eligibility gaps — analyzed and ranked by dollars at stake within 48 hours.</p></div>
+      <div class="rev"><div class="rn">3</div><h4>You get a clear plan</h4><p>Where revenue is leaking, what recovering it looks like, and what it takes — in plain English, no obligation, no disruption.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24">
+  <div class="container">
+    <div class="grid-3">
+      <div class="card"><div class="big">Who I am</div><p>Mehul Parmar — Business Development Manager specializing in medical billing &amp; RCM for solo and small US practices. 15+ years professional experience, 11+ years in BPO/KPO operations.</p></div>
+      <div class="card"><div class="big">How I work</div><p>Outcome-focused partnership, not vendor outsourcing. Measured in one thing: the collections your practice actually keeps.</p></div>
+      <div class="card"><div class="big">How to reach me</div><p>Directly, on WhatsApp — the same channel this page is built on. No gatekeepers, no call centers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-brand-grad" id="enquiry">
+  <div class="container">
+    <div class="cta-center">
+      <h2>You already know if this is your practice.</h2>
+      <p>The leak is not going to fix itself — and every month of "busy" makes it more expensive. Send one message today.</p>
+    </div>
+    <div class="check-list">
+      <div>Free revenue review, findings in 48 hours</div>
+      <div>Zero obligation, zero disruption</div>
+      <div>Direct access to me on WhatsApp</div>
+      <div>Clear next step — or an honest "you're fine"</div>
+    </div>
+    <form class="enq-form" id="enquiry">
+      <h3>Find my revenue leak</h3>
+      <div class="fh">Takes 30 seconds. Opens WhatsApp with your enquiry pre-filled — press send and it reaches me directly.</div>
+      <div class="frow">
+        <input name="name" placeholder="Your name" required>
+        <input name="practice_name" placeholder="Practice name">
+      </div>
+      <div class="frow">
+        <input name="email" type="email" placeholder="Email">
+        <input name="phone" placeholder="Phone">
+      </div>
+      <div class="frow">
+        <select name="specialty">
+          <option value="">Your specialty...</option>
+          <option>Family / General Practice</option>
+          <option>Internal Medicine</option>
+          <option>Pediatrics</option>
+          <option>Dental</option>
+          <option>Mental / Behavioral Health</option>
+          <option>Chiropractic / PT</option>
+          <option>Urgent Care</option>
+          <option>Multi-specialty Clinic</option>
+          <option>Other</option>
+        </select>
+        <select name="monthly_claims">
+          <option value="">Approx. monthly claim volume...</option>
+          <option>Under 500</option>
+          <option>500 – 1,500</option>
+          <option>1,500 – 3,000</option>
+          <option>3,000+</option>
+          <option>Not sure</option>
+        </select>
+      </div>
+      <textarea name="message" placeholder="Biggest billing problem right now (optional)"></textarea>
+      <button class="btn btn-wa fb" type="submit">Send Enquiry on WhatsApp →</button>
+      <p class="hipaa">Your information is never shared. HIPAA-conscious handling of anything you send.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Mehul Parmar</h4>
+        <p>Business Development Executive, career mentor, and revenue cycle partner for US healthcare practices. Helping people and businesses grow without the chaos.</p>
+        <div class="socials">
+          <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="mailto:kumarmehul48@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kumarmehul181/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/kumarmehul48" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.facebook.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Calendly">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a> <a href="rcm.html">RCM</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="track.html">Track Your Request</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Greater Ahmedabad Area, India</li>
+          <li>📧 <a href="mailto:kumarmehul48@gmail.com">kumarmehul48@gmail.com</a></li>
+          <li>📱 <a href="tel:+917043795279">+91 70437 95279</a></li>
+          <li>💬 <a href="https://wa.me/917043795279" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal">
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="refund.html">Refund</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
+      <p>© 2026 Mehul Parmar. All rights reserved. · Serving clients globally from India.</p>
+    </div>
+  </div>
+
+  <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="wa-float">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.3 7L4 29l7.2-2.2c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.4 12-12S23.1 3 16.6 3H16zm.1 22.4c-2 0-3.9-.5-5.5-1.6l-.4-.2-4.3 1.3 1.3-4.2-.3-.4C5.6 18.6 5 16.9 5 15c0-6 4.9-10.9 11-10.9h.1c6 0 10.9 4.9 10.9 10.9s-4.9 10.4-10.9 10.4zm6.2-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.2-.2-.5-.3z"/></svg>
+  </a>
+  <style>.wa-float{position:fixed;bottom:22px;right:22px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25d366;box-shadow:0 8px 24px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;}.wa-float:hover{transform:scale(1.08);}</style></footer>
+
+<script>
+document.getElementById('enquiry').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f=e.target;
+  var msg='New RCM Enquiry\n'
+    +'Name: '+(f.querySelector('[name=name]').value||'-')+'\n'
+    +'Practice: '+(f.querySelector('[name=practice_name]').value||'-')+'\n'
+    +'Email: '+(f.querySelector('[name=email]').value||'-')+'\n'
+    +'Phone: '+(f.querySelector('[name=phone]').value||'-')+'\n'
+    +'Specialty: '+(f.querySelector('[name=specialty]').value||'-')+'\n'
+    +'Monthly claims: '+(f.querySelector('[name=monthly_claims]').value||'-')+'\n'
+    +'Biggest problem: '+(f.querySelector('[name=message]').value||'-');
+  window.open('https://wa.me/917043795279?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle');
+  var menu=document.getElementById('navMobile');
+  if(toggle&&menu){
+    toggle.addEventListener('click',function(){menu.classList.toggle('open');});
+    var links=menu.querySelectorAll('a');
+    for(var i=0;i<links.length;i++){links[i].addEventListener('click',function(){menu.classList.remove('open');});}
+  }
+})();
+</script>
+</body>
+</html>
