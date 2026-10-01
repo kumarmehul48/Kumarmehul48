@@ -530,14 +530,25 @@
 document.getElementById('enquiry').addEventListener('submit', function(e){
   e.preventDefault();
   var f=e.target;
+  var v=function(n){return f.querySelector('[name='+n+']').value||''};
   var msg='New RCM Enquiry\n'
-    +'Name: '+(f.querySelector('[name=name]').value||'-')+'\n'
-    +'Practice: '+(f.querySelector('[name=practice_name]').value||'-')+'\n'
-    +'Email: '+(f.querySelector('[name=email]').value||'-')+'\n'
-    +'Phone: '+(f.querySelector('[name=phone]').value||'-')+'\n'
-    +'Specialty: '+(f.querySelector('[name=specialty]').value||'-')+'\n'
-    +'Monthly claims: '+(f.querySelector('[name=monthly_claims]').value||'-')+'\n'
-    +'Biggest problem: '+(f.querySelector('[name=message]').value||'-');
+    +'Name: '+(v('name')||'-')+'\n'
+    +'Practice: '+(v('practice_name')||'-')+'\n'
+    +'Email: '+(v('email')||'-')+'\n'
+    +'Phone: '+(v('phone')||'-')+'\n'
+    +'Specialty: '+(v('specialty')||'-')+'\n'
+    +'Monthly claims: '+(v('monthly_claims')||'-')+'\n'
+    +'Biggest problem: '+(v('message')||'-');
+  // save to USA campaign sheet first (fire-and-forget), then open WhatsApp
+  try{
+    fetch("https://superagent-d1c2e2a1.base44.app/functions/mehulSubmitLead",{
+      method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({name:v('name'),email:v('email'),phone:v('phone'),
+        practice:v('practice_name'),interest:'rcm-funnel',
+        specialty:v('specialty'),monthly_claims:v('monthly_claims'),
+        pain_point:v('message'),message:v('message'),source_page:'rcm-funnel'})
+    }).catch(function(){});
+  }catch(err){}
   window.open('https://wa.me/917043795279?text='+encodeURIComponent(msg),'_blank');
 });
 </script>
