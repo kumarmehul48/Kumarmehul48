@@ -8,10 +8,10 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#0f172a;--brand:#059669;--brand2:#047857;--accent:#fbbf24;--slate:#475569;--border:#e2e8f0;--light:#f0fdfa;}
+  :root{--navy:#0f172a;--brand:#059669;--brand2:#047857;--accent:#fbbf24;--slate:#9fb0c8;--border:#2c3b53;--light:#0e1626;}
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{font-family:'Inter',system-ui,sans-serif;color:#0f172a;background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#e6edf5;background:#0b1220;line-height:1.65;-webkit-font-smoothing:antialiased;}
   img{max-width:100%;display:block;height:auto;}
   h1,h2,h3,.hero h1,.section-title{font-family:'Manrope','Inter',sans-serif;}
   a{color:inherit;text-decoration:none;}
@@ -73,17 +73,17 @@
   .about-visual ul li .v{color:#fff;font-weight:600;text-align:right;}
 
   .about-content p{font-size:1.02rem;color:var(--slate);margin-bottom:18px;line-height:1.75;}
-  .about-content p strong{color:var(--navy);}
-  .about-content .lead{font-size:1.15rem;color:var(--navy);font-weight:500;line-height:1.6;}
+  .about-content p strong{color:#ffffff;}
+  .about-content .lead{font-size:1.15rem;color:#ffffff;font-weight:500;line-height:1.6;}
 
   /* EXPERIENCE TIMELINE */
   .timeline{position:relative;padding-left:36px;margin-top:24px;}
   .timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,#059669,#fbbf24);}
   .tl-item{position:relative;padding-bottom:32px;}
   .tl-item:last-child{padding-bottom:0;}
-  .tl-item::before{content:"";position:absolute;left:-36px;top:6px;width:18px;height:18px;border-radius:50%;background:#fff;border:3px solid var(--brand);box-shadow:0 0 0 4px rgba(37,99,235,.15);}
+  .tl-item::before{content:"";position:absolute;left:-36px;top:6px;width:18px;height:18px;border-radius:50%;background:#141f35;border:3px solid var(--brand);box-shadow:0 0 0 4px rgba(37,99,235,.15);}
   .tl-item .period{font-size:.8rem;color:var(--brand2);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px;}
-  .tl-item h4{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .tl-item h4{font-size:1.05rem;font-weight:700;color:#ffffff;margin-bottom:4px;}
   .tl-item .company{color:var(--slate);font-size:.9rem;font-weight:500;margin-bottom:8px;}
   .tl-item p{font-size:.9rem;color:var(--slate);}
 
@@ -94,14 +94,14 @@
 
   /* EXPERTISE GRID */
   .expertise{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
-  .exp-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px;transition:box-shadow .25s,transform .25s;}
+  .exp-card{background:#141f35;border:1px solid var(--border);border-radius:14px;padding:24px;transition:box-shadow .25s,transform .25s;}
   .exp-card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08);transform:translateY(-2px);}
-  .exp-card h4{font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--navy);display:flex;align-items:center;gap:8px;}
+  .exp-card h4{font-size:1rem;font-weight:700;margin-bottom:8px;color:#ffffff;display:flex;align-items:center;gap:8px;}
   .exp-card p{font-size:.88rem;color:var(--slate);}
 
   /* EDUCATION */
-  .edu-item{background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px 26px;margin-bottom:14px;display:flex;justify-content:space-between;gap:20px;align-items:center;}
-  .edu-item .edu-info h4{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .edu-item{background:#141f35;border:1px solid var(--border);border-radius:14px;padding:22px 26px;margin-bottom:14px;display:flex;justify-content:space-between;gap:20px;align-items:center;}
+  .edu-item .edu-info h4{font-size:1rem;font-weight:700;color:#ffffff;margin-bottom:4px;}
   .edu-item .edu-info p{font-size:.875rem;color:var(--slate);}
   .edu-item .edu-year{font-size:.85rem;font-weight:700;color:var(--brand2);white-space:nowrap;}
 
@@ -179,7 +179,7 @@
     <a href="index.html" class="nav-logo">Mehul <span>Parmar</span></a>
     <div class="nav-links">
       <a href="index.html" class="nav-btn">Home</a>
-      <a href="services.html" class="nav-btn">Services</a>
+      <a href="services.html" class="nav-btn">Services</a> <a href="rcm.html" class="nav-btn">RCM</a>
       <a href="about.html" class="nav-btn active">About</a>
       <a href="contact.html" class="nav-btn">Contact</a>
       <a href="track.html" class="nav-btn">Track</a>
@@ -196,7 +196,7 @@
   <div class="nav-mobile" id="navMobile">
     <div class="nav-mobile-inner">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
+      <a href="services.html">Services</a> <a href="rcm.html">RCM</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="track.html">Track Your Request</a>
@@ -513,7 +513,7 @@
         <h4>Pages</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html">Services</a> <a href="rcm.html">RCM</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="track.html">Track Your Request</a></li>
