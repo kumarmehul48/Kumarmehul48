@@ -3,276 +3,497 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stop Losing 10–20% of Your Revenue | Free RCM Revenue Audit</title>
-<meta name="description" content="Independent US practices lose 10–20% of revenue to denials, underpayments and aged claims. Get a free revenue audit and see exactly where your money leaks.">
-<!-- META PIXEL: paste your Meta Pixel base code here once the domain goes live -->
+<title>Free Revenue Audit — Stop Losing 10-20% of Collections | Mehul Parmar</title>
+<meta name="description" content="Independent US practices lose 10-20% of revenue to denials, underpayments and unworked A/R. Free revenue audit: findings in 48 hours, zero obligation.">
+<link rel="icon" type="image/png" href="favicon.png">
+<!-- META PIXEL: paste pixel base code here once custom domain goes live -->
 <style>
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#0b1220;color:#e6edf5;line-height:1.65;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-h1,h2,h3{line-height:1.25;font-weight:800;letter-spacing:-.01em}
-a{color:#34d399}
-.btn{display:inline-block;padding:15px 32px;border-radius:12px;font-weight:700;text-decoration:none;transition:.2s;border:none;cursor:pointer;font-size:1.02rem}
-.btn-gold{background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#1a1206}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(251,191,36,.35)}
-.btn-em{background:linear-gradient(135deg,#10b981,#059669);color:#06281c}
-.btn-em:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(16,185,129,.35)}
-.badge{display:inline-block;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.35);color:#34d399;padding:6px 16px;border-radius:99px;font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-section{padding:66px 0}
-.kicker{color:#fbbf24;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
-/* HERO */
-.hero{background:radial-gradient(1100px 500px at 70% -10%,rgba(16,185,129,.14),transparent),radial-gradient(800px 400px at 10% 110%,rgba(251,191,36,.08),transparent),#0b1220;padding:84px 0 70px}
-.hero h1{font-size:clamp(1.9rem,4.6vw,3.3rem);margin:18px 0}
-.hero h1 em{font-style:normal;color:#34d399}
-.hero p.lead{font-size:1.12rem;color:#9fb0c3;max-width:640px;margin-bottom:28px}
-.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
-.trust{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap;color:#8fa1b5;font-size:.9rem}
-.trust b{color:#e6edf5}
-/* STATS */
-.stats{background:#0e1729;border-top:1px solid #1c2a42;border-bottom:1px solid #1c2a42;padding:34px 0}
-.stats .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;text-align:center}
-.stat .n{font-size:2rem;font-weight:800;color:#34d399}
-.stat .n.gold{color:#fbbf24}
-.stat .l{font-size:.85rem;color:#9fb0c3;margin-top:4px}
-/* GRID */
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:#101b30;border:1px solid #1c2a42;border-radius:16px;padding:26px}
-.card h3{font-size:1.06rem;margin-bottom:8px}
-.card p{color:#9fb0c3;font-size:.94rem}
-.card .num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;background:rgba(16,185,129,.14);color:#34d399;font-weight:800;margin-bottom:14px}
-.card.gold .num{background:rgba(251,191,36,.12);color:#fbbf24}
-/* LEAKS */
-.leak{border-left:3px solid #ef4444;padding-left:18px;margin-bottom:22px}
-.leak h3{font-size:1.05rem;margin-bottom:6px}
-.leak p{color:#9fb0c3;font-size:.94rem}
-.leak .cost{color:#f87171;font-weight:700;font-size:.86rem}
-/* AUDIT */
-.audit{background:linear-gradient(160deg,#101f33,#0d1626);border:1px solid #1c2a42;border-radius:20px;padding:44px 36px}
-.audit ul{list-style:none;margin:20px 0 28px}
-.audit li{padding:9px 0 9px 32px;position:relative;color:#cdd9e5}
-.audit li:before{content:"✓";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:rgba(16,185,129,.16);color:#34d399;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800}
-/* FORM */
-.formcard{background:#101b30;border:1px solid #2a3b57;border-radius:20px;padding:36px;max-width:640px;margin:0 auto}
-.formcard h2{font-size:1.5rem;margin-bottom:6px}
-.formcard p.sub{color:#9fb0c3;font-size:.94rem;margin-bottom:22px}
-label{display:block;font-size:.82rem;font-weight:600;color:#cdd9e5;margin:14px 0 6px}
-input,select,textarea{width:100%;padding:13px 15px;border-radius:10px;border:1px solid #2a3b57;background:#0b1220;color:#e6edf5;font-size:.95rem;font-family:inherit}
-input:focus,select:focus,textarea:focus{outline:none;border-color:#34d399;box-shadow:0 0 0 3px rgba(16,185,129,.15)}
-textarea{min-height:90px;resize:vertical}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:560px){.row2{grid-template-columns:1fr}}
-.formcard .btn{width:100%;margin-top:22px;text-align:center}
-.fine{font-size:.8rem;color:#6b7d92;margin-top:14px;text-align:center}
-#fmsg{margin-top:14px;padding:12px 16px;border-radius:10px;display:none;font-size:.92rem}
-#fmsg.ok{display:block;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.4);color:#34d399}
-#fmsg.err{display:block;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4);color:#f87171}
-/* WHO */
-.who{display:flex;flex-wrap:wrap;gap:12px}
-.who span{background:#101b30;border:1px solid #1c2a42;border-radius:99px;padding:9px 20px;font-size:.9rem;color:#cdd9e5}
-/* FOOTER */
-footer{background:#0a101d;border-top:1px solid #1c2a42;padding:36px 0;color:#6b7d92;font-size:.86rem}
-footer .fl{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:12px}
-footer a{color:#9fb0c3;text-decoration:none}
-.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(16,185,129,.4);z-index:50}
+  :root{--navy:#0f172a;--brand:#059669;--brand2:#047857;--accent:#fbbf24;--slate:#9fb0c8;--border:#2c3b53;--light:#0e1626;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#e6edf5;background:#0b1220;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;height:auto;}
+  h1,h2,h3,.hero h1,.section-title{font-family:'Manrope','Inter',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%;}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.97);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+  .nav-logo{font-weight:800;font-size:1rem;color:#fff;white-space:nowrap;}
+  .nav-logo span{color:var(--accent);}
+  .nav-links{display:flex;align-items:center;gap:4px;}
+  .nav-btn{color:#6ee7b7;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;transition:background .2s,color .2s;white-space:nowrap;}
+  .nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
+  .nav-cta{margin-left:8px;background:#fbbf24;color:#0f172a;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap;}
+  .nav-cta:hover{background:#fcd34d;}
+  .nav-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0;}
+  .nav-mobile{display:none;border-top:1px solid rgba(255,255,255,.1);background:var(--navy);}
+  .nav-mobile.open{display:block;}
+  .nav-mobile-inner{padding:12px 20px 20px;}
+  .nav-mobile a{display:block;width:100%;padding:12px 16px;border-radius:8px;color:#6ee7b7;font-weight:600;font-size:.95rem;text-align:left;}
+  .nav-mobile a:hover{background:rgba(255,255,255,.08);color:#fff;}
+  .nav-mobile .nav-cta{display:block;text-align:center;margin:8px 0 0;background:#fbbf24;color:#0f172a;}
+  @media(max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,#022c22 0%,#042f2e 40%,#064e3b 75%,#065f46 100%);color:#fff;padding:80px 0 100px;text-align:center;overflow:hidden;position:relative;}
+  .hero::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(251,191,36,.14),transparent 70%);border-radius:50%;pointer-events:none;}
+  .hero-inner{max-width:860px;margin:0 auto;position:relative;z-index:1;}
+  .badge{display:inline-block;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.4);color:var(--accent);padding:6px 16px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.6px;margin-bottom:24px;}
+  .hero h1{font-size:2.75rem;line-height:1.12;font-weight:800;margin-bottom:20px;letter-spacing:-.015em;}
+  .hero h1 span{color:var(--accent);}
+  .hero p.kicker{font-size:1.15rem;color:#a7f3d0;font-weight:600;margin-bottom:16px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .hero p.lead{font-size:1rem;color:#6ee7b7;margin-bottom:32px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .hero .btn-group{justify-content:center;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;max-width:1080px;margin:0 auto;position:relative;z-index:1;text-align:left;}
+  .hero-photo{display:flex;justify-content:center;}
+  .hero-photo img{width:300px;height:300px;max-width:100%;border-radius:24px;object-fit:cover;border:4px solid rgba(255,255,255,.18);box-shadow:0 30px 60px rgba(2,8,32,.45);}
+  .hero-photo-frame{position:relative;}
+  .hero-photo-frame::before{content:"";position:absolute;inset:-18px;border:1px solid rgba(147,197,253,.35);border-radius:32px;pointer-events:none;}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:40px;text-align:center;}.hero .btn-group{justify-content:center;}.hero h1,.hero p.kicker,.hero p.lead{margin-left:auto;margin-right:auto;}.hero-photo img{width:220px;height:220px;}}
+
+
+  /* BUTTONS */
+  .btn-group{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:12px;font-weight:700;font-size:.93rem;transition:transform .2s,background .2s;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;}
+  .btn-wa{background:#25d366;color:#fff;box-shadow:0 4px 14px rgba(34,197,94,.3);}
+  .btn-wa:hover{background:#1eb85a;transform:translateY(-2px);}
+  .btn-white{background:#fbbf24;color:#0f172a;box-shadow:0 4px 18px rgba(251,191,36,.35);}
+  .btn-white:hover{background:#fcd34d;transform:translateY(-2px);}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+  .btn-brand{background:var(--brand);color:#fff;}
+  .btn-brand:hover{background:var(--brand2);transform:translateY(-2px);}
+
+  /* SECTIONS */
+  .py-24{padding:96px 0;}
+  .bg-light{background:var(--light);}
+  .bg-dark{background:var(--navy);color:#fff;}
+  .bg-brand-grad{background:linear-gradient(135deg,#047857 0%,#059669 100%);color:#fff;}
+  .section-title{font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:12px;letter-spacing:-.01em;}
+  .section-sub{color:var(--slate);margin-bottom:44px;max-width:720px;font-size:1rem;}
+  .bg-dark .section-sub{color:#a7f3d0;}
+  .bg-dark .section-title{color:#fff;}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+
+  /* PILLARS */
+  .pillar{background:#141f35;border:1px solid var(--border);border-radius:18px;padding:30px;transition:box-shadow .25s,transform .25s;}
+  .pillar:hover{box-shadow:0 12px 32px rgba(15,23,42,.1);transform:translateY(-3px);}
+  .pillar-ico{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#059669,#fbbf24);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px;}
+  .pillar h3{font-size:1.15rem;font-weight:800;margin-bottom:10px;color:#ffffff;}
+  .pillar p{font-size:.92rem;color:var(--slate);margin-bottom:16px;}
+  .pillar ul{margin-bottom:20px;}
+  .pillar li{font-size:.88rem;color:var(--slate);padding:5px 0 5px 20px;position:relative;}
+  .pillar li::before{content:"✓";color:var(--brand);font-weight:800;position:absolute;left:0;}
+  .pillar-link{color:var(--brand2);font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;transition:gap .2s;}
+  .pillar-link:hover{gap:10px;}
+
+  /* CARDS */
+  .card{background:#141f35;border:1px solid var(--border);border-radius:16px;padding:24px;transition:box-shadow .25s,transform .25s;}
+  .card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08);transform:translateY(-2px);}
+  .card .big{font-size:2rem;font-weight:800;color:var(--brand);margin-bottom:8px;line-height:1.1;}
+  .card h4{font-size:.95rem;font-weight:700;margin-bottom:6px;color:#ffffff;}
+  .card p{font-size:.875rem;color:var(--slate);}
+
+  /* LEAKS */
+  .leak{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-left:5px solid var(--accent);border-radius:13px;padding:22px;}
+  .leak .ln{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:1.2px;margin-bottom:6px;}
+  .leak h4{font-size:1.05rem;font-weight:700;margin-bottom:8px;}
+  .leak p{font-size:.875rem;color:#a7f3d0;}
+  .leak-wide{grid-column:1/-1;}
+  .verdict{text-align:center;color:var(--accent);font-weight:800;font-size:1.1rem;margin-top:40px;}
+
+  /* CTA */
+  .cta-center{text-align:center;max-width:740px;margin:0 auto;}
+  .cta-center h2{font-size:2rem;font-weight:800;margin-bottom:14px;letter-spacing:-.01em;}
+  .cta-center p{color:#a7f3d0;margin-bottom:28px;font-size:1rem;}
+  .cta-center .btn-group{justify-content:center;}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:#a7f3d0;padding:60px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;margin-bottom:40px;}
+  footer h4{color:#fff;font-weight:700;font-size:.9rem;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
+  footer p{font-size:.875rem;line-height:1.7;}
+  footer li{padding:5px 0;}
+  footer li a{font-size:.875rem;color:#a7c4ba;transition:color .2s;}
+  footer li a:hover{color:#fff;}
+  footer .socials{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  footer .socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;}
+  footer .socials a:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
+  footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:32px;text-align:center;font-size:.85rem;color:#94a3b8;}
+  footer .legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px;}
+  footer .legal-links a{color:#6ee7b7;font-size:.85rem;}
+  footer .legal-links a:hover{color:#fff;}
+
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .hero{padding:60px 0 72px;}
+    .hero h1{font-size:2rem;}
+    .hero p.kicker{font-size:1.05rem;}
+    .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
+    .section-title{font-size:1.5rem;}
+    .py-24{padding:64px 0;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
+    footer .socials{justify-content:center;}
+    .btn{width:100%;max-width:280px;}
+    .btn-group{flex-direction:column;align-items:center;}
+  }
+  @media(max-width:480px){
+    .hero h1{font-size:1.7rem;}
+    .section-title{font-size:1.35rem;}
+    .pillar{padding:22px;}
+    .card{padding:20px;}
+    .container{padding:0 16px;}
+    .hero{padding:48px 0 60px;}
+  }
+
+  /* RCM PAGE */
+  .rcm-hero{padding:88px 0 96px;text-align:center;}
+  .scene{max-width:780px;margin:0 auto 56px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-left:5px solid var(--accent);border-radius:16px;padding:34px 34px 28px;text-align:left;}
+  .scene .st{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:1.4px;margin-bottom:14px;}
+  .scene p{font-size:1.02rem;color:#d7e3f2;margin-bottom:14px;}
+  .scene p strong{color:#fff;}
+  .stat{background:#141f35;border:1px solid var(--border);border-radius:16px;padding:26px 22px;text-align:left;}
+  .stat .big{font-size:2.1rem;font-weight:800;color:var(--accent);line-height:1.05;margin-bottom:8px;}
+  .stat p{font-size:.85rem;color:#9fb0c8;}
+  .sources{font-size:.75rem;color:#64748b;margin-top:22px;text-align:center;}
+  .hard{background:#141f35;border:1px solid var(--border);border-radius:14px;padding:26px;}
+  .hard .hn{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#059669,#fbbf24);color:#0f172a;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1rem;margin-bottom:14px;}
+  .hard h4{font-size:1.02rem;font-weight:800;margin-bottom:8px;color:#fff;}
+  .hard p{font-size:.88rem;color:#9fb0c8;}
+  .hard em{color:#6ee7b7;font-style:normal;font-weight:700;}
+  .step{background:#141f35;border:1px solid var(--border);border-radius:14px;padding:24px;position:relative;}
+  .step .sn{font-size:10.5px;font-weight:800;color:var(--accent);letter-spacing:1.3px;margin-bottom:8px;}
+  .step h4{font-size:1rem;font-weight:800;margin-bottom:6px;color:#fff;}
+  .step p{font-size:.86rem;color:#9fb0c8;}
+  .sla{display:inline-block;margin-top:12px;background:rgba(16,185,129,.16);border:1px solid rgba(16,185,129,.4);color:#6ee7b7;font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:999px;}
+  .speed-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;text-align:center;}
+  .speed-strip .ss{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px 12px;}
+  .speed-strip .ss b{display:block;font-size:1.5rem;color:var(--accent);font-weight:800;}
+  .speed-strip .ss span{font-size:.8rem;color:#a7f3d0;}
+  .fixcard{background:#141f35;border:1px solid var(--border);border-left:5px solid var(--brand);border-radius:14px;padding:24px;}
+  .fixcard .fx{font-size:10.5px;font-weight:800;color:#6ee7b7;letter-spacing:1.2px;margin-bottom:8px;}
+  .fixcard h4{font-size:1rem;font-weight:800;color:#fff;margin-bottom:6px;}
+  .fixcard p{font-size:.86rem;color:#9fb0c8;}
+  .rev{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:26px;text-align:center;}
+  .rev .rn{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#059669,#fbbf24);color:#0f172a;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin:0 auto 14px;}
+  .rev h4{font-size:.98rem;font-weight:800;color:#fff;margin-bottom:6px;}
+  .rev p{font-size:.85rem;color:#9fb0c8;}
+  .illus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:48px 0 8px;}
+  .illus-grid img{border-radius:14px;border:1px solid rgba(255,255,255,.14);width:100%;height:150px;object-fit:cover;}
+  .check-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:26px auto 34px;max-width:640px;text-align:left;}
+  .check-list div{font-size:.92rem;color:#d7e3f2;padding:8px 0 8px 28px;position:relative;}
+  .check-list div::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800;}
+  .enq-form{max-width:640px;margin:0 auto;background:#141f35;border:1px solid var(--border);border-radius:18px;padding:34px;text-align:left;}
+  .enq-form h3{font-size:1.2rem;font-weight:800;color:#fff;margin-bottom:4px;}
+  .enq-form .fh{font-size:.85rem;color:#9fb0c8;margin-bottom:22px;}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .enq-form input,.enq-form select,.enq-form textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:.95rem;font-family:inherit;background:#0b1220;color:#e6edf5;margin-bottom:14px;}
+  .enq-form input:focus,.enq-form select:focus,.enq-form textarea:focus{outline:none;border-color:var(--brand);}
+  .enq-form .fb{width:100%;margin-top:4px;}
+  .hipaa{font-size:.72rem;color:#64748b;text-align:center;margin-top:14px;}
+  @media(max-width:900px){.speed-strip{grid-template-columns:repeat(2,1fr);}.illus-grid{grid-template-columns:repeat(2,1fr);}.check-list{grid-template-columns:1fr;}.frow{grid-template-columns:1fr;}}
 </style>
 </head>
+
 <body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Mehul <span>Parmar</span></a>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="badge">Free Revenue Audit — Limited Slots This Month</span>
-    <h1>Your practice is leaking <em>10–20% of its revenue</em> — and nobody on your team owns the problem.</h1>
-    <p class="lead">Industry data shows 12–15% of claims are denied on first submission (up from 11.8% in 2024), and every denied claim costs $57–$125 to rework. We find the leaks, fix the cycle, and hand you a monthly revenue report you can actually read.</p>
-    <div class="btns">
-      <a href="#audit-form" class="btn btn-gold">Get My Free Revenue Audit →</a>
-      <a href="#leaks" class="btn btn-em">See Where the Money Leaks</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="services.html" class="nav-btn">Services</a> <a href="rcm.html" class="nav-btn">RCM</a> <a href="bde-campaign.html" class="nav-btn active">Free Audit</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="track.html" class="nav-btn">Track</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
     </div>
-    <div class="trust">
-      <span>✓ <b>No long contracts</b> — month to month</span>
-      <span>✓ <b>No setup fees</b> to switch</span>
-      <span>✓ Built for <b>solo &amp; small practices</b></span>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="4" y1="12" x2="20" y2="12"/>
+        <line x1="4" y1="18" x2="20" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <div class="nav-mobile-inner">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a> <a href="rcm.html">RCM</a> <a href="bde-campaign.html">Free Audit</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="track.html">Track Your Request</a>
+      <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
     </div>
   </div>
-</header>
+</nav>
 
-<div class="stats">
-  <div class="wrap"><div class="grid">
-    <div class="stat"><div class="n">12–15%</div><div class="l">claims denied on first submission</div></div>
-    <div class="stat"><div class="n gold">$57–$125</div><div class="l">cost to rework a single denial</div></div>
-    <div class="stat"><div class="n">12 hrs</div><div class="l">staff time burned weekly on prior auths</div></div>
-    <div class="stat"><div class="n gold">10–20%</div><div class="l">of collections lost to leaks most practices never audit</div></div>
-  </div></div>
-</div>
-
-<section id="leaks">
-  <div class="wrap">
-    <div class="kicker">The Research</div>
-    <h2 style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:8px">Five revenue leaks silently draining practices like yours</h2>
-    <p style="color:#9fb0c3;max-width:640px;margin-bottom:34px">This is what industry data says is happening right now — not to hospitals with billing departments, but to independent practices doing their best with a front desk and hope.</p>
-    <div class="grid2">
-      <div class="leak"><h3>1. Denials written off, never appealed</h3><p>Practices appeal less than half of denied claims. The rest are quietly adjusted off — pure revenue gone.</p><p class="cost">Typical loss: 3–5% of monthly collections</p></div>
-      <div class="leak"><h3>2. Underpayments nobody checks</h3><p>Payers short-pay claims all the time. If nobody compares payment vs. contract rate, the difference never comes back.</p><p class="cost">Typical loss: 2–4% of collections</p></div>
-      <div class="leak"><h3>3. Aged claims aging out</h3><p>Claims over 90 days rarely get worked, and past payer timely-filing limits they're uncollectable — legally.</p><p class="cost">Typical loss: 1–3% of collections</p></div>
-      <div class="leak"><h3>4. Prior authorization chaos</h3><p>12 hours a week of staff time chasing auths — time taken straight away from patients at the front desk.</p><p class="cost">Cost: staff burnout + delayed care</p></div>
-      <div class="leak"><h3>5. Eligibility surprises</h3><p>Wrong coverage details at check-in become denial + rework + an awkward patient conversation 30 days later.</p><p class="cost">Cost: denials + patient trust</p></div>
-      <div class="leak"><h3 style="color:#34d399">The fix is boring — and works</h3><p>Verified eligibility up front, claims submitted within 24 hours, every denial followed within 48, payments reconciled against contract rates. Every month. That's it.</p></div>
-    </div>
-  </div>
-</section>
-
-<section style="background:#0d1626;border-top:1px solid #1c2a42;border-bottom:1px solid #1c2a42">
-  <div class="wrap">
-    <div class="kicker">Built For</div>
-    <h2 style="margin-bottom:8px">Who this is for</h2>
-    <p style="color:#9fb0c3;margin-bottom:26px">Not hospital systems. Not chains with billing departments. Independent practices:</p>
-    <div class="who">
-      <span>🩺 Family &amp; Internal Medicine</span>
-      <span>🧠 Mental &amp; Behavioral Health</span>
-      <span>🦷 Dental</span>
-      <span>👶 Pediatrics</span>
-      <span>🚑 Independent Urgent Care</span>
-      <span>🦴 Chiropractic &amp; PT</span>
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="badge">Free Revenue Audit · Limited Slots This Month</span>
+    <h1>Your practice is leaking <span>10–20% of its revenue</span> — nobody on your team owns the problem.</h1>
+    <p class="kicker">Industry data says 12–15% of claims are denied on first submission (up from 11.8% in 2024). Each denial costs $57–$125 to rework.</p>
+    <p class="lead">Send one remittance or a 90-day denial report. In 48 hours you get the exact dollar location of every leak — even if you never hire me.</p>
+    <div class="btn-group">
+      <a href="#audit" class="btn btn-white">Get My Free Revenue Audit →</a>
+      <a href="#leaks" class="btn btn-ghost">See Where the Money Leaks</a>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="kicker">How We Work</div>
-    <h2 style="margin-bottom:8px">The full revenue cycle — owned end to end</h2>
-    <p style="color:#9fb0c3;margin-bottom:30px">With service-level guarantees, not vague promises:</p>
-    <div class="grid3">
-      <div class="card"><div class="num">1</div><h3>Eligibility Verified</h3><p>Every patient, every visit — before they're seen. No surprise denials.</p></div>
-      <div class="card gold"><div class="num">2</div><h3>Coding &amp; Charge Entry</h3><p>Clean, compliant coding — the #1 driver of first-pass payment.</p></div>
-      <div class="card"><div class="num">3</div><h3>Claims in 24 Hours</h3><p>Submitted daily. SLA: every claim out the door within 24 hours of the visit.</p></div>
-      <div class="card gold"><div class="num">4</div><h3>Denial Triage in 48 Hours</h3><p>Every denial worked within 48 hours — appealed, corrected, or escalated. Never written off silently.</p></div>
-      <div class="card"><div class="num">5</div><h3>Payment Reconciliation</h3><p>Payer short-pays caught and recovered against your contract rates.</p></div>
-      <div class="card gold"><div class="num">6</div><h3>Patient Statements</h3><p>Courteful, compliant, on schedule — so you're never the bad guy.</p></div>
+<section class="py-24 bg-light">
+  <div class="container">
+    <div class="speed-strip">
+      <div class="ss"><b>12–15%</b><span>claims denied on first submission</span></div>
+      <div class="ss"><b>$57–$125</b><span>cost to rework one denial</span></div>
+      <div class="ss"><b>12 hrs</b><span>staff time burned weekly on prior auths</span></div>
+      <div class="ss"><b>10–20%</b><span>of collections lost to unaudited leaks</span></div>
+    </div>
+    <p class="sources">Sources: CAQH Index, MGMA industry benchmarks, Change Healthcare denial index.</p>
+  </div>
+</section>
+
+<section class="py-24" id="leaks">
+  <div class="container">
+    <h2 class="section-title">Five revenue leaks quietly draining practices like yours</h2>
+    <p class="section-sub">Not hospitals with billing departments — independent practices doing their best with a front desk and hope.</p>
+    <div class="grid-2">
+      <div class="leak"><div class="ln">LEAK 01 · TYPICAL LOSS 3–5%</div><h4>Denials written off, never appealed</h4><p>Practices appeal fewer than half of denied claims. The rest are quietly adjusted off — pure revenue gone.</p></div>
+      <div class="leak"><div class="ln">LEAK 02 · TYPICAL LOSS 2–4%</div><h4>Underpayments nobody checks</h4><p>Payers short-pay constantly. If nobody compares payment vs. contract rate, the difference never comes back.</p></div>
+      <div class="leak"><div class="ln">LEAK 03 · TYPICAL LOSS 1–3%</div><h4>Aged claims aging out</h4><p>Claims past 90 days rarely get worked — past timely-filing limits they are uncollectable, legally.</p></div>
+      <div class="leak"><div class="ln">LEAK 04 · STAFF + PATIENT TRUST</div><h4>Prior authorization chaos</h4><p>12 hours a week chasing auths — time taken straight from patients at the front desk.</p></div>
+      <div class="leak"><div class="ln">LEAK 05 · DENIALS + REWORK</div><h4>Eligibility surprises</h4><p>Wrong coverage at check-in becomes denial + rework + an awkward patient conversation 30 days later.</p></div>
+      <div class="leak"><div class="ln">THE FIX</div><h4>Boring — and it works</h4><p>Verified eligibility, claims out in 24 hours, every denial worked in 48, payments reconciled to contract. Every month. That's it.</p></div>
+    </div>
+    <p class="verdict">The pattern is always the same: nobody owns the revenue cycle end to end.</p>
+  </div>
+</section>
+
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">Who this audit is for</h2>
+    <p class="section-sub">Solo and small independent practices across TX, FL, GA, AZ, NC — and everywhere else.</p>
+    <div class="grid-3">
+      <div class="card"><h4>🩺 Family &amp; Internal Medicine</h4><p>High claim volume, thin margins — every underpayment matters.</p></div>
+      <div class="card"><h4>🧠 Mental &amp; Behavioral Health</h4><p>Auth-heavy, denial-prone billing that eats clinical hours.</p></div>
+      <div class="card"><h4>🦷 Dental</h4><p>Insurance + patient billing mix that's easy to leak money in.</p></div>
+      <div class="card"><h4>👶 Pediatrics</h4><p>Eligibility-heavy schedules and small claims that nobody chases.</p></div>
+      <div class="card"><h4>🚑 Independent Urgent Care</h4><p>Volume billing where A/R piles up faster than anyone works it.</p></div>
+      <div class="card"><h4>🦴 Chiropractic &amp; PT</h4><p>Visit-limit denials and auth chaos — the classic leak pair.</p></div>
     </div>
   </div>
 </section>
 
-<section style="background:radial-gradient(700px 300px at 85% 20%,rgba(251,191,36,.07),transparent),#0d1626;border-top:1px solid #1c2a42">
-  <div class="wrap">
-    <div class="audit">
-      <div class="kicker">The Free Revenue Audit</div>
-      <h2 style="font-size:clamp(1.4rem,2.6vw,2rem);margin-bottom:8px">Find out exactly where your money is going — before you commit to anything</h2>
-      <p style="color:#9fb0c3">Send us a recent remittance or a 90-day denial report. Within 48 hours you get back:</p>
-      <ul>
-        <li>Your true first-pass rate vs. the 85% industry benchmark</li>
-        <li>Top 3 denial reasons for your specialty — with fixes</li>
-        <li>Underpayments found, dollarized</li>
-        <li>Aged claims you can still recover vs. already lost</li>
-        <li>One-page action plan — even if you never hire us</li>
-      </ul>
-      <a href="#audit-form" class="btn btn-gold">Claim My Free Audit →</a>
-      <p style="color:#6b7d92;font-size:.85rem;margin-top:16px">No obligation. No sales pressure. If nothing's broken, we'll tell you that too.</p>
+<section class="py-24">
+  <div class="container">
+    <h2 class="section-title">What you get back in 48 hours</h2>
+    <p class="section-sub">One page. Real numbers. Yours.</p>
+    <div class="check-list">
+      <div>Your true first-pass rate vs. the 85% benchmark</div>
+      <div>Top 3 denial reasons for your specialty — with fixes</div>
+      <div>Underpayments found and dollarized</div>
+      <div>Aged claims: recoverable vs. already lost</div>
+      <div>One-page action plan — useful even if you never hire me</div>
+      <div>An honest "you're fine" if nothing is broken</div>
+    </div>
+    <div class="btn-group" style="justify-content:center;">
+      <a href="#audit" class="btn btn-brand">Claim My Free Audit →</a>
     </div>
   </div>
 </section>
 
-<section id="audit-form">
-  <div class="wrap">
-    <div class="formcard">
-      <h2>Request your free revenue audit</h2>
-      <p class="sub">48-hour turnaround. We reply personally — no call centers, no bots.</p>
-      <form id="auditForm">
-        <div class="row2">
-          <div><label for="name">Your name *</label><input id="name" name="name" required placeholder="Dr. Jane Smith"></div>
-          <div><label for="practice">Practice name</label><input id="practice" name="practice" placeholder="Smith Family Medicine"></div>
-        </div>
-        <div class="row2">
-          <div><label for="specialty">Specialty</label>
-            <select id="specialty" name="specialty">
-              <option value="">Select specialty</option>
-              <option>Family / General Practice</option>
-              <option>Internal Medicine</option>
-              <option>Mental / Behavioral Health</option>
-              <option>Dental</option>
-              <option>Pediatrics</option>
-              <option>Urgent Care</option>
-              <option>Chiropractic / Physical Therapy</option>
-              <option>Other</option>
-            </select></div>
-          <div><label for="monthly_claims">Monthly claim volume</label>
-            <select id="monthly_claims" name="monthly_claims">
-              <option value="">Select volume</option>
-              <option>Under 500</option>
-              <option>500 – 1,500</option>
-              <option>1,500 – 3,000</option>
-              <option>Over 3,000</option>
-            </select></div>
-        </div>
-        <div class="row2">
-          <div><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="office@practice.com"></div>
-          <div><label for="phone">Phone *</label><input id="phone" name="phone" required placeholder="+1 (555) 000-0000"></div>
-        </div>
-        <label for="pain">Your biggest billing headache (optional)</label>
-        <textarea id="pain" name="message" placeholder="e.g. Denials keep climbing and we can't tell why…"></textarea>
-        <button type="submit" class="btn btn-gold">Send My Free Audit Request →</button>
-        <div id="fmsg"></div>
-        <p class="fine">Your details go straight to Mehul — never shared, never sold.</p>
-      </form>
+<section class="py-24 bg-light">
+  <div class="container">
+    <h2 class="section-title">If you keep me on after the audit</h2>
+    <p class="section-sub">The full revenue cycle, owned end to end — with service-level guarantees, not vague promises.</p>
+    <div class="grid-3">
+      <div class="step"><div class="sn">STEP 01</div><h4>Eligibility Verified</h4><p>Every patient, every visit — before they're seen.</p><span class="sla">Zero surprise Denials</span></div>
+      <div class="step"><div class="sn">STEP 02</div><h4>Coding &amp; Charge Entry</h4><p>Clean, compliant coding — the #1 driver of first-pass payment.</p><span class="sla">Accuracy First</span></div>
+      <div class="step"><div class="sn">STEP 03</div><h4>Claims Submission</h4><p>Submitted daily, not batched weekly.</p><span class="sla">24-HOUR SLA</span></div>
+      <div class="step"><div class="sn">STEP 04</div><h4>Denial Management</h4><p>Appealed, corrected, escalated — never silently written off.</p><span class="sla">48-HOUR SLA</span></div>
+      <div class="step"><div class="sn">STEP 05</div><h4>Payment Reconciliation</h4><p>Short-pays caught and recovered against your contract rates.</p><span class="sla">Contract-Matched</span></div>
+      <div class="step"><div class="sn">STEP 06</div><h4>Reporting &amp; A/R</h4><p>A monthly report you can actually read. A/R worked to zero.</p><span class="sla">Full Visibility</span></div>
     </div>
+  </div>
+</section>
+
+<section class="py-24 bg-brand-grad" id="audit">
+  <div class="container">
+    <div class="cta-center">
+      <h2>Find out where your money is going — free.</h2>
+      <p>No obligation. No sales pressure. 48-hour turnaround. Opens WhatsApp with your request pre-filled.</p>
+    </div>
+    <form class="enq-form" id="auditForm">
+      <h3>Request my free revenue audit</h3>
+      <div class="fh">Takes 30 seconds. Your request is saved and reaches Mehul directly on WhatsApp.</div>
+      <div class="frow">
+        <input name="name" placeholder="Your name" required>
+        <input name="practice_name" placeholder="Practice name">
+      </div>
+      <div class="frow">
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="phone" placeholder="Phone" required>
+      </div>
+      <div class="frow">
+        <select name="specialty">
+          <option value="">Your specialty...</option>
+          <option>Family / General Practice</option>
+          <option>Internal Medicine</option>
+          <option>Pediatrics</option>
+          <option>Dental</option>
+          <option>Mental / Behavioral Health</option>
+          <option>Chiropractic / PT</option>
+          <option>Urgent Care</option>
+          <option>Multi-specialty Clinic</option>
+          <option>Other</option>
+        </select>
+        <select name="monthly_claims">
+          <option value="">Approx. monthly claim volume...</option>
+          <option>Under 500</option>
+          <option>500 – 1,500</option>
+          <option>1,500 – 3,000</option>
+          <option>3,000+</option>
+          <option>Not sure</option>
+        </select>
+      </div>
+      <textarea name="message" placeholder="Biggest billing problem right now (optional)"></textarea>
+      <button class="btn btn-white fb" type="submit">Send My Free Audit Request →</button>
+      <p class="hipaa">Your information is never shared. HIPAA-conscious handling of anything you send.</p>
+    </form>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">
-    <div class="fl">
-      <a href="https://kumarmehul48.github.io/Kumarmehul48/">Main Site</a>
-      <a href="https://wa.me/917043795279">WhatsApp</a>
-      <a href="https://calendly.com/kumarmehul48">Book a Call</a>
-      <a href="https://www.linkedin.com/in/kumarmehul181/">LinkedIn</a>
-      <a href="https://kumarmehul48.github.io/Kumarmehul48/privacy">Privacy Policy</a>
-      <a href="https://kumarmehul48.github.io/Kumarmehul48/terms">Terms</a>
-    </div>
-    <p>Mehul Parmar — Business Development, Medical Billing &amp; RCM. Serving independent practices across the US.</p>
-  </div>
-</footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Mehul Parmar</h4>
+        <p>Business Development Executive, career mentor, and revenue cycle partner for US healthcare practices. Helping people and businesses grow without the chaos.</p>
+        <div class="socials">
+          <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="mailto:kumarmehul48@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kumarmehul181/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/kumarmehul48" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.facebook.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://calendly.com/kumarmehul48" target="_blank" rel="noopener" aria-label="Calendly">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </a>
+        </div>
+      </div>
 
-<a href="https://wa.me/917043795279?text=Hi%20Mehul%2C%20I%20want%20to%20know%20more%20about%20the%20free%20revenue%20audit." class="wa-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5.1 2.3 7.2L4 29l7.1-2.3c2 1.1 4.3 1.7 6.6 1.7h.3c6.6 0 12-5.4 12-12S22.6 3 16 3zm7 9.7c-.3 1.5-1.5 4.5-4.4 7.3-2.9 2.9-6.1 4.4-8.7 4.4-1.3 0-2.2-.5-2.6-1.1-.4-.7-.4-2.6-.2-3.2.1-.4 2.4-1 2.7-1 .4 0 .6.5.8 1 .1.4.5 1.4.8 1.4.5 0 2.3-1.2 3.7-2.7 1.6-1.6 2.9-3.6 3-4.1.1-.3-.1-.5-.5-.6-.7-.1-2.3-.3-2.4-.7-.1-.4 1.6-2.6 2.1-3 .5-.4 1.4-.3 1.8-.3.6 0 1.4.1 1.6.5.1.3.1 1.2-.1 2.1z"/></svg>
-</a>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a> <a href="rcm.html">RCM</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="track.html">Track Your Request</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Greater Ahmedabad Area, India</li>
+          <li>📧 <a href="mailto:kumarmehul48@gmail.com">kumarmehul48@gmail.com</a></li>
+          <li>📱 <a href="tel:+917043795279">+91 70437 95279</a></li>
+          <li>💬 <a href="https://wa.me/917043795279" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal">
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="refund.html">Refund</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
+      <p>© 2026 Mehul Parmar. All rights reserved. · Serving clients globally from India.</p>
+    </div>
+  </div>
+
+  <a href="https://wa.me/917043795279" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="wa-float">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.3 7L4 29l7.2-2.2c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.4 12-12S23.1 3 16.6 3H16zm.1 22.4c-2 0-3.9-.5-5.5-1.6l-.4-.2-4.3 1.3 1.3-4.2-.3-.4C5.6 18.6 5 16.9 5 15c0-6 4.9-10.9 11-10.9h.1c6 0 10.9 4.9 10.9 10.9s-4.9 10.4-10.9 10.4zm6.2-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.2-.2-.5-.3z"/></svg>
+  </a>
+  <style>.wa-float{position:fixed;bottom:22px;right:22px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25d366;box-shadow:0 8px 24px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;}.wa-float:hover{transform:scale(1.08);}</style></footer
 
 <script>
-// UTM capture — so every lead records which ad brought them in
 (function(){
   var p=new URLSearchParams(location.search);
   var src=p.get('utm_source')||'',cmp=p.get('utm_campaign')||'',chn=p.get('utm_medium')||'';
   if(src||cmp){try{sessionStorage.setItem('bde_utm',[src,chn,cmp].join('|'))}catch(e){}}
 })();
-document.getElementById('auditForm').addEventListener('submit',function(e){
+document.getElementById('auditForm').addEventListener('submit', function(e){
   e.preventDefault();
-  var f=e.target,v=function(n){return f.querySelector('[name='+n+']').value||''};
+  var f=e.target;
+  var v=function(n){return f.querySelector('[name='+n+']').value||''};
   var utm='';try{utm=sessionStorage.getItem('bde_utm')||''}catch(e){}
-  var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending…';
-  var msg='Hi Mehul — Free Revenue Audit request\n'
-    +'Name: '+(v('name')||'-')+'\nPractice: '+(v('practice')||'-')+'\n'
-    +'Specialty: '+(v('specialty')||'-')+'\nClaims/month: '+(v('monthly_claims')||'-')+'\n'
-    +'Email: '+(v('email')||'-')+'\nPhone: '+(v('phone')||'-')+'\n'
-    +'Headache: '+(v('message')||'-');
-  fetch('https://superagent-d1c2e2a1.base44.app/functions/mehulSubmitLead',{
-    method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({
-      name:v('name'),email:v('email'),phone:v('phone'),practice:v('practice'),
-      interest:'free-revenue-audit',specialty:v('specialty'),monthly_claims:v('monthly_claims'),
+  var msg='New Free Revenue Audit Request\n'
+    +'Name: '+(v('name')||'-')+'\n'
+    +'Practice: '+(v('practice_name')||'-')+'\n'
+    +'Email: '+(v('email')||'-')+'\n'
+    +'Phone: '+(v('phone')||'-')+'\n'
+    +'Specialty: '+(v('specialty')||'-')+'\n'
+    +'Monthly claims: '+(v('monthly_claims')||'-')+'\n'
+    +'Biggest problem: '+(v('message')||'-');
+  fetch("https://superagent-d1c2e2a1.base44.app/functions/mehulSubmitLead",{
+    method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({name:v('name'),email:v('email'),phone:v('phone'),
+      practice:v('practice_name'),interest:'free-revenue-audit',
+      specialty:v('specialty'),monthly_claims:v('monthly_claims'),
       pain_point:v('message'),message:v('message'),
-      source_page:'bde-campaign'+(utm?' ['+utm+']':'')
-    })
+      source_page:'bde-campaign'+(utm?' ['+utm+']':'')})
   }).then(function(r){return r.json()}).then(function(d){
-    if(d.ok===true){
-      document.getElementById('fmsg').className='ok';
-      document.getElementById('fmsg').textContent='✓ Sent! Opening WhatsApp so Mehul gets your request instantly…';
-      window.open('https://wa.me/917043795279?text='+encodeURIComponent(msg),'_blank');
-    }else{throw new Error(d.error||'failed')}
-  }).catch(function(){
-    document.getElementById('fmsg').className='err';
-    document.getElementById('fmsg').textContent='⚠ Could not save — opening WhatsApp directly so nothing is lost.';
     window.open('https://wa.me/917043795279?text='+encodeURIComponent(msg),'_blank');
-  }).finally(function(){btn.disabled=false;btn.textContent='Send My Free Audit Request →'});
+  }).catch(function(){
+    window.open('https://wa.me/917043795279?text='+encodeURIComponent(msg),'_blank');
+  });
 });
+</script>
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle');
+  var menu=document.getElementById('navMobile');
+  if(toggle&&menu){
+    toggle.addEventListener('click',function(){menu.classList.toggle('open');});
+    var links=menu.querySelectorAll('a');
+    for(var i=0;i<links.length;i++){links[i].addEventListener('click',function(){menu.classList.remove('open');});}
+  }
+})();
 </script>
 </body>
 </html>
